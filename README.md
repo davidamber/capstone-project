@@ -1,4 +1,4 @@
-# capstone-project
+# Davidson_Amber_Capstone_CaseStudy
 ## This is a food app that will guide the user through the process of making coffee based on their desired method, strength of coffee, etc.
 ### User Stories:
 #### As a user, I want to log in with a username and password so that my info and preferences will be saved in the app.
