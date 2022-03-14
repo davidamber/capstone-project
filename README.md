@@ -2,10 +2,10 @@
 ## This is a food app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
 ### User Stories:
 - As a user, I want to create an account with a username and password so that my info and preferences will be saved in the app.
-  -Task: Implement login functionality
-  -Task: Decide on information to be collected for account
-  -Task: Decided on preferences to be collected
-  -Task: Enable preferences to be collected/saved
+  - Task: Implement login functionality
+  - Task: Decide on information to be collected for account
+  - Task: Decided on preferences to be collected
+  - Task: Enable preferences to be collected/saved
 
 - As a user, I want the ability to view my account details.
   -Task:
