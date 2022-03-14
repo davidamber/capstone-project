@@ -8,8 +8,15 @@
   - Task: Enable preferences to be collected/saved
 
 - As a user, I want the ability to view my account details.
-  -Task:
-- As a user, I want the abilily to update my account details so my info and preferences will be current and up-to-date.
+  - Task: Decide how the user will navigate to account details
+  - Task: Decide what the user will see in account details
+  
+- As a user, I want the ability to update my account details so my info and preferences will be current and up-to-date.
+
 - As a user, I want to be able to cancel my account so that my info is no longer stored.
+
 - As a user, I want to input my desired method of making coffee so that I can receive detailed instructions from the app.
+  - Task: Define methods of making coffee that can be chosen
+  - Task: 
+
 - As a user, I want to be able to choose unit of measure so that I can measure ingredients the way I want to.
