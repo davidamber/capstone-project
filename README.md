@@ -16,7 +16,8 @@
 - As a user, I want to be able to cancel my account so that my info is no longer stored.
 
 - As a user, I want to input my desired method of making coffee so that I can receive detailed instructions from the app.
-  - Task: Define methods of making coffee that can be chosen
+  - Task: Define methods of making coffee that can be chosen by user
+  - Task: Decide how method will be selected
   - Task: 
 
 - As a user, I want to be able to choose unit of measure so that I can measure ingredients the way I want to.
