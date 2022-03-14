@@ -1,5 +1,5 @@
 # Davidson_Amber_Capstone
-## This is a food app that will guide the user through the process of making coffee based on their desired method, strength of coffee, etc.
+## This is a food app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
 ### User Stories:
 - As a user, I want to create an account with a username and password so that my info and preferences will be saved in the app.
 - As a user, I want the ability to view my account details.
