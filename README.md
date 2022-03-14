@@ -3,8 +3,7 @@
 ### User Stories:
 - As a user, I want to create an account with a username and password so that my info and preferences will be saved in the app.
   - Task: Implement login functionality
-  - Task: Decide on information to be collected for account
-  - Task: Decided on preferences to be collected
+  - Task: Decide on information and preferences to be collected for account
   - Task: Enable preferences to be collected/saved
 
 - As a user, I want the ability to view my account details.
