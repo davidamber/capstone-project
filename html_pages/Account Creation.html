@@ -18,6 +18,10 @@
     }
     body {
       background-color: #eeddc7;
+      font-family: 'Roboto', sans-serif;
+    }
+    .dropdown {
+      text-align: center;
     }
   </style>
 </head>
@@ -27,28 +31,27 @@
 
 <h1>Tell us a little about yourself. </h1><br>
 <form>
-  <label for="fname">FIRST NAME:</label><br>
+  <label for="fname">First Name:</label><br>
   <input type="text" id="fname" name="fname"><br>
-  <label for="lname">LAST NAME:</label><br>
+  <label for="lname">Last Name:</label><br>
   <input type="text" id="lname" name="lname"><br>
-  <label for="email">EMAIL:</label><br>
+  <label for="email">Email:</label><br>
   <input type="text" id="email" name="email"><br><br>
 </form>
 <h2>What's your preferred method of coffee?</h2>
-<form>
-  <input type="checkbox" id="method1" name="method1" value="Coffee Machine">
-  <label for="method1">Coffee Machine</label><br>
-  <input type="checkbox" id="method2" name="method2" value="Pour Over">
-  <label for="method2">Pour Over</label><br>
-  <input type="checkbox" id="method3" name="method3" value="French Press">
-  <label for="method3">French Press</label><br>
-  <input type="checkbox" id="method4" name="method4" value="Aeropress">
-  <label for="method4">Aeropress</label><br><br>
-</form>
+<div class="dropdown">
+  <button class="btn btn-light btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Coffee Machine
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Coffee Machine</a>
+    <a class="dropdown-item" href="#">Pour-over</a>
+    <a class="dropdown-item" href="#">French Press</a>
+    <a class="dropdown-item" href="#">Aeropress</a>
+  </div><br><br>
+</div>
 <h2>What's your preferred strength of coffee?</h2>
 <form>
-  <input type="radio" id="weak" name="strength">
-  <label for="weak">Weaker</label><br>
   <input type="radio" id="regular" name="strength">
   <label for="regular">Regular</label><br>
   <input type="radio" id="strong" name="strength">

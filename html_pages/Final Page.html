@@ -22,12 +22,13 @@
 
         }
         body {
-            background-image: url('images/coffeebackground.jpg');
-            background-size: cover;
-            background position: center;
-            font-family: 'Roboto', sans-serif;
+        background-color: #eeddc7;
+        font-family: 'Roboto', sans-serif;
         }
-        h1 {
+        img {
+            margin-left: auto;
+            width: 200px;
+            height: 200px;
 
         }
         h1, form {
@@ -37,14 +38,15 @@
     </style>
 </head>
 <body><br>
-<h1>Welcome! Let's get started.</h1><br>
+<img src="images/coffeebanner.png">
+<h1>Here's your brew!</h1><br>
 <form>
-    <label for="uname">Username:</label><br>
-    <input type="text" id="uname" name="uname"><br>
-    <label for="pass">Password:</label><br>
-    <input type="text" id="pass" name="pass"><br><br>
-    <button type="button" class="btn btn-secondary btn-lg btn-light">LOGIN</button><br><br>
-    <button type="button" class="btn btn-light">SIGN-UP</button>
+    <label for="coffee">Coffee Amount:</label><br>
+    <input type="text" id="coffee" name="coffee"><br>
+    <label for="water">Water Amount:</label><br>
+    <input type="text" id="water" name="water"><br>
+    <label for="grind">Grind Size:</label><br>
+    <input type="text" id="grind" name="water"><br><br>
 </form>
 </body>
 </html>
