@@ -13,14 +13,19 @@
 
   <title></title>
   <style>
-    h1, form, p {
+    h1, h2, form, p {
       text-align: center;
     }
-
+    body {
+      background-color: #eeddc7;
+      font-family: 'Roboto', sans-serif;
+    }
+    .dropdown {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
@@ -33,21 +38,20 @@
   <label for="email">Email:</label><br>
   <input type="text" id="email" name="email"><br><br>
 </form>
-<p>What's your preferred method of coffee?</p>
+<h2>What's your preferred method of coffee?</h2>
+<div class="dropdown">
+  <button class="btn btn-light btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Coffee Machine
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Coffee Machine</a>
+    <a class="dropdown-item" href="#">Pour-over</a>
+    <a class="dropdown-item" href="#">French Press</a>
+    <a class="dropdown-item" href="#">Aeropress</a>
+  </div><br><br>
+</div>
+<h2>What's your preferred strength of coffee?</h2>
 <form>
-  <input type="checkbox" id="method1" name="method1" value="Coffee Machine">
-  <label for="method1">Coffee Machine</label><br>
-  <input type="checkbox" id="method2" name="method2" value="Pour Over">
-  <label for="method2">Pour Over</label><br>
-  <input type="checkbox" id="method3" name="method3" value="French Press">
-  <label for="method3">French Press</label><br>
-  <input type="checkbox" id="method4" name="method4" value="Aeropress">
-  <label for="method4">Aeropress</label><br><br>
-</form>
-<p>What's your preferred strength of coffee?</p>
-<form>
-  <input type="radio" id="weak" name="strength">
-  <label for="weak">Weaker</label><br>
   <input type="radio" id="regular" name="strength">
   <label for="regular">Regular</label><br>
   <input type="radio" id="strong" name="strength">
