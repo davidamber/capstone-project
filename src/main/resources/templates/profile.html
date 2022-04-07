@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap"
+      rel="stylesheet">
+<style>
+  body {
+    background-color: #efd8c1;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+  }
+  .btn {
+    background-color: #9ab0a6;
+  }
+  th {
+    background-color: #a4d0bd;
+  }
+  td {
+    background-color: antiquewhite;
+  }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+<div class="container my-2">
+  <h1>User Profile</h1><br>
+  <table border="1" class="table table-striped table-responsive-md">
+    <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Coffee Method</th>
+      <th>Coffee Strength</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+  <a class="btn">Update</a>
+
+  <div class="container my-2">
+    <a th:href="@{/logout}" class="btn btn-sm mb-3"> Log out </a>
+  </div>
+</div>
+</body>
+</html>

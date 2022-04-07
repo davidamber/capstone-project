@@ -1,0 +1,39 @@
+body {
+    background: no-repeat fixed center center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+form {
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#login {
+    background-color: #a4d0bd;
+    font-size: 20px;
+}
+
+#signup {
+    background-color: #9ab0a6;
+    font-size: 16px;
+}
+
+.input-group {
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+}
+
+.input-group-addon {
+    background-color: #a4d0bd;
+}
+
+
