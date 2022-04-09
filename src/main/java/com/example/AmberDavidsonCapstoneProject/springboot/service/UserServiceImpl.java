@@ -1,13 +1,13 @@
-package springboot.service;
+package com.example.AmberDavidsonCapstoneProject.springboot.service;
 
 import java.util.List;
 import java.util.Optional;
 
+import com.example.AmberDavidsonCapstoneProject.springboot.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import springboot.model.User;
-import springboot.repository.UserRepository;
+import com.example.AmberDavidsonCapstoneProject.springboot.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {

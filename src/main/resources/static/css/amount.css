@@ -1,0 +1,25 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+body {
+    text-align: center;
+    background-color: #eeddc7;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.btn{
+    object-position: center;
+    background-color: #a4d0bd;
+    color: black;
+}
+.continue {
+    background-color: #9ab0a6;
+}

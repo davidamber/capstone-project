@@ -1,7 +1,7 @@
-package springboot.service;
+package com.example.AmberDavidsonCapstoneProject.springboot.service;
 
 import java.util.List;
-import springboot.model.User;
+import com.example.AmberDavidsonCapstoneProject.springboot.model.User;
 
 public interface UserService {
     List <User> getAllUsers();

@@ -6,11 +6,11 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 h2 {
-    font-size: 24px;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background-color: #efd8c1;
-    font-family: 'Roboto', sans-serif;
 }
 .dropdown {
     text-align: center;
@@ -29,9 +29,6 @@ input {
 }
 .input-group-addon {
     background-color: #a4d0bd;
-}
-.form2 {
-    font-weight: bold;
 }
 .btn {
     background-color: #9ab0a6;

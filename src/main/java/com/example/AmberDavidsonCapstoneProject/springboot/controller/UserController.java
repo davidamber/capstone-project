@@ -1,4 +1,4 @@
-package springboot.controller;
+package com.example.AmberDavidsonCapstoneProject.springboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import springboot.model.User;
-import springboot.service.UserService;
+import com.example.AmberDavidsonCapstoneProject.springboot.model.User;
+import com.example.AmberDavidsonCapstoneProject.springboot.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -17,8 +17,11 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class UserController {
 
-    @Autowired
     private UserService userService;
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     // display list of users
     @GetMapping("/")
