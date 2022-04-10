@@ -26,6 +26,12 @@ public class UserList {
     public long getId() {
         return id;
     }
+    @Column(name = "strength")
+    private String strength;
+
+    @Column(name = "method")
+    private String method;
+
     public void setId(long id) {
         this.id = id;
     }
@@ -35,6 +41,13 @@ public class UserList {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+    public String getStrength() {
+        return strength;
+    }
+    public String getMethod() {
+        return method;
+    }
+
     public String getLastName() {
         return lastName;
     }
@@ -47,4 +60,16 @@ public class UserList {
     public void setEmail(String email) {
         this.email = email;
     }
+    public void setStrength(String strength) {
+        this.strength = strength;
+    }
+    public void setMethod(String method) {
+        this.method = method;
+    }
 }
+
+
+
+
+
+
