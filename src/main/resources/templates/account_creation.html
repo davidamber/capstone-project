@@ -39,18 +39,18 @@
 </div>
 <h1>Tell us a little about yourself.</h1><br><br>
 <h2>Personal Information</h2>
-<form id="form1">
-    <div class="input-group" action="#" method="POST">
+<form id="form1" action="#" th:action="@{/saveUser}" th:object="${user}" method="POST">
+    <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="fname" type="text" class="form-control" name="fname" placeholder="First Name">
+        <input id="fname" type="text" th:field="*{firstName}" class="form-control" name="fname" placeholder="First Name">
     </div>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="lname" type="text" class="form-control" name="lname" placeholder="Last Name">
+        <input id="lname" type="text" th:field="*{lastName}" class="form-control" name="lname" placeholder="Last Name">
     </div>
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+        <input id="email" type="text" th:field="*{email}" class="form-control" name="email" placeholder="Email">
     </div>
 <h2>Preferred Coffee Method:</h2>
     <div class="form-check form-check-inline">
