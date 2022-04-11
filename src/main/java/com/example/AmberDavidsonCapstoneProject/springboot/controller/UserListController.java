@@ -47,7 +47,7 @@ public class UserListController {
 
         // set employee as a model attribute to pre-populate the form
         model.addAttribute("userList", userList);
-        return "update_userList";
+        return "update_user";
     }
 
     @GetMapping("/deleteUserList/{id}")
@@ -55,7 +55,7 @@ public class UserListController {
 
         // call delete employee method
         this.userListService.deleteUserListById(id);
-        return "account_creation";
+        return "redirect:/userlist";
     }
 
     // Map 'sign-up' button to account creation
