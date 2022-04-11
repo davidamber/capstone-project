@@ -39,7 +39,7 @@
 </div>
 <h1>Tell us a little about yourself.</h1><br><br>
 <h2>Personal Information</h2>
-<form id="form1" action="#" th:action="@{/saveUser}" th:object="${user}" method="POST">
+<form id="form1" action="#" th:action="@{/saveUserList}" th:object="${userList}" method="POST">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input id="fname" type="text" th:field="*{firstName}" class="form-control" name="fname" placeholder="First Name">
@@ -52,36 +52,23 @@
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
         <input id="email" type="text" th:field="*{email}" class="form-control" name="email" placeholder="Email">
     </div>
-<h2>Preferred Coffee Method:</h2>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Coffee Machine</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Pour-over</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
-        <label class="form-check-label" for="inlineRadio1">French Press</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Aeropress</label>
-    </div>
+<!--<h2>Preferred Coffee Method:</h2>-->
+<!--    <select th:field="*{method}">-->
+<!--        <option th:value="'Coffee Machine'" th:text="Coffee Machine"></option>-->
+<!--        <option th:value="'Pour-over'" th:text="Pour-over"></option>-->
+<!--        <option th:value="'French Press'" th:text="French Press"></option>-->
+<!--        <option th:value="'Aeropress'" th:text="Aeropress"></option>-->
+<!--    </select>-->
 
-    <h2>Preferred Coffee Strength:</h2>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Regular</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Strong</label>
-    </div><br><br>
-
+<!--    <h2>Preferred Coffee Strength:</h2>-->
+<!--    <select th:field="*{strength}">-->
+<!--        <option th:value="'Regular'" th:text="Regular"></option>-->
+<!--        <option th:value="'Strong'" th:text="Strong"></option>-->
+<!--    </select>-->
+    <br><br>
     <button type="submit" class="btn btn-lg" id="sButton">Submit</button>
 </form>
+<a th:href="@{/userList}"> Back to User List</a>
 </body>
 <script type="text/javascript" src="/javascript/script.js"></script>
 </html>

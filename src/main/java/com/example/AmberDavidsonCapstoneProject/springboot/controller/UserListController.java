@@ -29,7 +29,7 @@ public class UserListController {
         UserList userList = new UserList();
         model.addAttribute("userList", userList);
 
-        return "new_user";
+        return "account_creation";
     }
 
     @PostMapping("/saveUserList")
@@ -55,7 +55,13 @@ public class UserListController {
 
         // call delete employee method
         this.userListService.deleteUserListById(id);
-        return "redirect:/";
+        return "account_creation";
+    }
+
+    // Map 'sign-up' button to account creation
+    @PostMapping("/newUserListForm")
+    public String signup() {
+        return "account_creation";
     }
 
 //    @GetMapping("/userProfile")
