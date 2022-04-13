@@ -29,16 +29,30 @@
 
         <input type="text" th:field="*{email}" placeholder="User Email" class="form-control mb-4 col-4">
 
-        <input type="text" th:field="*{strength}" placeholder="Strength" class="form-control mb-4 col-4">
+<!--        <input type="text" th:field="*{strength}" placeholder="Strength" class="form-control mb-4 col-4">-->
 
-        <input type="text" th:field="*{method}" placeholder="Method" class="form-control mb-4 col-4">
+<!--        <input type="text" th:field="*{method}" placeholder="Method" class="form-control mb-4 col-4">-->
+
+        <select class="form-select" th:field="*{method}" aria-label="Default select">
+            <!--        <option selected="">Preferred Coffee Method</option>-->
+            <option th:value="'Coffee Machine'" th:text="Coffee-Machine">Coffee Machine</option>
+            <option th:value="'Pour-over'" th:text="Pour-over">Pour-over</option>
+            <option th:value="'French Press'" th:text="French-Press">French Press</option>
+            <option th:value="'Aeropress'" th:text="Aeropress">Aeropress</option>
+        </select><br><br>
+
+        <select class="form-select" th:field="*{strength}" aria-label="Default select">
+            <!--        <option selected="">Preferred Coffee Strength</option>-->
+            <option th:value="'Regular'" th:text="Regular">Regular</option>
+            <option th:value="'Strong'" th:text="Strong">Strong</option>
+        </select><br><br>
 
         <button type="submit" class="btn col-2"> Update User</button>
     </form>
 
     <hr>
 
-    <a th:href="@{/user_list.html}"> Back to User List</a>
+    <a th:href="@{/userList}"> Back to User List</a>
 </div>
 </body>
 

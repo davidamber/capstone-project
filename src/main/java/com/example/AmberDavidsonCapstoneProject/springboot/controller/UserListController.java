@@ -23,20 +23,20 @@ public class UserListController {
         return "user_list";
     }
 
-    @GetMapping("/showNewUserListForm")
+    @GetMapping("/register")
     public String showNewUserListForm(Model model) {
         // create model attribute to bind form data
         UserList userList = new UserList();
         model.addAttribute("userList", userList);
 
-        return "account_creation";
+        return "register";
     }
 
     @PostMapping("/saveUserList")
     public String saveUserList(@ModelAttribute("userList") UserList userList) {
-        // save employee to database
+        // save user to database
         userListService.saveUserList(userList);
-        return "redirect:/";
+        return "redirect:/userList";
     }
 
     @GetMapping("/showFormForUpdate/{id}")
@@ -50,18 +50,18 @@ public class UserListController {
         return "update_user";
     }
 
-    @GetMapping("/deleteUserList/{id}")
+    @PostMapping("/deleteUserList/{id}")
     public String deleteUserList(@PathVariable(value = "id") long id) {
 
         // call delete employee method
         this.userListService.deleteUserListById(id);
-        return "redirect:/userlist";
+        return "redirect:/userList";
     }
 
     // Map 'sign-up' button to account creation
-    @PostMapping("/newUserListForm")
+    @GetMapping("/newUserListForm")
     public String signup() {
-        return "account_creation";
+        return "register";
     }
 
 //    @GetMapping("/userProfile")

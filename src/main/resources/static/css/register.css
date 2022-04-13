@@ -6,7 +6,7 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
 body {
@@ -46,4 +46,8 @@ small {
 }
 .input-group small {
     visibility: hidden;
+}
+.form-select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }

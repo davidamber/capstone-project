@@ -32,7 +32,7 @@
 
     <style>
         body {
-            background-image: url('images/coffeebackground.jpg')
+            background-image: url('static/css/images/coffeebackground.jpg')
         }
     </style>
 </head>
@@ -49,9 +49,9 @@
     </div>
     <br>
         <button id="login" type="submit" class="btn btn-secondary btn-lg btn-light">LOGIN</button><br><br>
-        <button id="signup" type="button" th:href="@{/newUserListForm}" class="btn btn-light">SIGN-UP</button>
+        <a id="signup" th:href="@{/register}" class="btn btn-light">SIGN-UP</a>
 </form>
 
-<script src="/javascript/LoginFormValidation.js"></script>
+<script src="/static/css/javascript/LoginFormValidation.js"></script>
 </body>
 </html>
