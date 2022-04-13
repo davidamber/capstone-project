@@ -1,0 +1,51 @@
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+body {
+    object-position: center;
+    text-align: center;
+    background-color: #eeddc7;
+    font-family: 'Roboto', sans-serif;
+}
+img1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+#toolbar {
+    object-position: center;
+    float: right;
+}
+.btn{
+    object-position: center;
+    background-color: #a4d0bd;
+    color: black;
+}
+#continue {
+    background-color: #9ab0a6;
+}
+img2 {
+    object-position: 200px ;
+    height: 50px;
+    width: 50px;
+}
+h1, form {
+    text-align: center;
+}
+.form-select {
+    width: 50%;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
