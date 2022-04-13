@@ -1,0 +1,56 @@
+h1, h2, form, p {
+    text-align: center;
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #efd8c1;
+}
+.dropdown {
+    text-align: center;
+}
+#dropdownMenuButton1{
+    background-color: #9ab0a6;
+    color: black;
+}
+input {
+    background-color: #a4d0bd;
+}
+#form1 {
+    object-position: center;
+    width: 30%;
+    margin: auto;
+}
+.input-group-addon {
+    background-color: #a4d0bd;
+}
+.btn {
+    background-color: #9ab0a6;
+}
+#submit {
+    font-size: 24px;
+    background-color: #9ab0a6;
+    color: black;
+}
+#userlist {
+    object-position: center;
+}
+small {
+    visibility: visible;
+}
+.input-group error{
+    border-color: crimson;
+}
+.input-group small {
+    visibility: hidden;
+}
+.form-select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}

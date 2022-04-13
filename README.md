@@ -1,5 +1,8 @@
 # Davidson_Amber_Capstone
 ## This is a coffee calculator app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
+### Progress: 30%
+### Feature Changes (updated 4/11):
+- Worked on mapping in controller for CRUD operations
 ### User Stories:
 - As a user, I want to create an account with a username and password so that my info and preferences will be saved in the app.
   - Task: Implement login functionality
