@@ -38,6 +38,9 @@ input {
     background-color: #9ab0a6;
     color: black;
 }
+#userlist {
+    object-position: center;
+}
 small {
     visibility: visible;
 }
