@@ -53,7 +53,7 @@
         <input id="email" type="text" th:field="*{email}" class="form-control" name="email" placeholder="Email">
     </div>
 
-<h2>Preferred Coffee Method:</h2>
+    <h2>Preferred Coffee Method:</h2>
     <select class="form-select" th:field="*{method}" aria-label="Default select">
 <!--        <option selected="">Preferred Coffee Method</option>-->
         <option th:value="'Coffee Machine'" th:text="Coffee-Machine">Coffee Machine</option>
@@ -70,9 +70,10 @@
     </select>
     <br><br>
 
-    <button type="submit" class="btn btn-lg" id="sButton">Submit</button>
+    <button type="submit" class="btn btn-lg" id="sButton">Submit</button><br><br>
+    <a th:href="@{/userList}" id="userlist">Back to User List</a>
 </form>
-<a th:href="@{/userList}" id="userlist">Back to User List</a>
+
 </body>
 <script type="text/javascript" src="/static/css/javascript/script.js"></script>
 </html>

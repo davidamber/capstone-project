@@ -3,6 +3,7 @@ h1 {
     font-size: 60px;
 }
 body {
+    object-position: center;
     text-align: center;
     background-color: #eeddc7;
     font-family: 'Roboto', sans-serif;
@@ -15,11 +16,15 @@ img {
     object-fit: cover;
     overflow-y: hidden;
 }
+#toolbar {
+    object-position: center;
+    float: right;
+}
 .btn{
     object-position: center;
     background-color: #a4d0bd;
     color: black;
 }
-.continue {
+#continue {
     background-color: #9ab0a6;
 }

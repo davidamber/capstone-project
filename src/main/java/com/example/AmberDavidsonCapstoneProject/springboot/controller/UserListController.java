@@ -64,12 +64,6 @@ public class UserListController {
         return "register";
     }
 
-//    @GetMapping("/userProfile")
-//    public String showUser(@ModelAttribute("User") userList userList) {
-//        userListService.showUser(user);
-//        return "profile";
-//    }
-
     @GetMapping("/amount")
     public String amount() {
         return "amount";
@@ -88,5 +82,10 @@ public class UserListController {
     @GetMapping("/finalResult")
     public String result() {
         return "final_result";
+    }
+
+    @GetMapping("/form")
+    public String form() {
+        return "form";
     }
 }

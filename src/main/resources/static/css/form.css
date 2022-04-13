@@ -1,6 +1,6 @@
-h1 {
+h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: 40px;
 }
 body {
     object-position: center;
@@ -8,11 +8,11 @@ body {
     background-color: #eeddc7;
     font-family: 'Roboto', sans-serif;
 }
-img {
+img1 {
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     overflow-y: hidden;
 }
@@ -27,4 +27,25 @@ img {
 }
 #continue {
     background-color: #9ab0a6;
+}
+img2 {
+    object-position: 200px ;
+    height: 50px;
+    width: 50px;
+}
+h1, form {
+    text-align: center;
+}
+.form-select {
+    width: 50%;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
