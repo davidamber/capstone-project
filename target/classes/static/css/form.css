@@ -32,15 +32,20 @@ body {
 #continue {
     background-color: #9ab0a6;
 }
-#img2 {
-    height: 200px;
-    width: 200px;
+#img2,#img3,#img4,#img5 {
+    background-color: #a4d0bd;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+    overflow-y: hidden;
 }
-/*.column {*/
-/*    float: left;*/
-/*    width: 25%;*/
-/*    padding: 5px;*/
-/*}*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
 /*.row::after {*/
 /*    content: "";*/
 /*    clear: both;*/

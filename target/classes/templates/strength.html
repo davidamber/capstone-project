@@ -18,30 +18,32 @@
     <title></title>
     <style>
         body {
+            object-position: center;
         background-color: #eeddc7;
         font-family: 'Roboto', sans-serif;
         }
         img {
-            object-position: 200px ;
+            /*object-position: 200px ;*/
             height: 250px;
             width: 250px;
         }
         h1 {
             font-family: 'Roboto', sans-serif;
-        }
-        h1, form {
             text-align: center;
+        }
+        #regular,#strong {
+            background-color: #a4d0bd;
         }
 
     </style>
 </head>
 <body><br>
 <h1>Pick your strength:</h1><br>
-<img src="images/coffeebeans.png" alt="coffee beans">
+<img src="images/noun-coffee-beans-2949100.png" alt="coffee beans">
 <form>
-    <button type="button" class="btn-light btn-primary btn-lg">Regular</button><br><br>
-    <button type="button" class="btn-light btn-primary btn-lg">Strong</button><br><br><br>
-    <button type="button" class="btn btn-secondary btn-lg btn-light">Continue</button><br><br>
+    <button type="button" class="btn-light btn-primary btn-lg" id="regular">Regular</button><br><br>
+    <button type="button" class="btn-light btn-primary btn-lg" id="strong">Strong</button><br><br><br>
 </form>
+<button type="button" class="btn btn-secondary btn-lg btn-light">Continue</button><br><br>
 </body>
 </html>

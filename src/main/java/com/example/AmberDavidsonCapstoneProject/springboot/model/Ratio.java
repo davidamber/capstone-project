@@ -8,11 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Ratio")
+@Table(name = "ratio")
 public class Ratio {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long ratioId;
 
     @Column(name = "ratio_name")
@@ -20,6 +20,9 @@ public class Ratio {
 
     @Column(name = "ratio_value")
     private String ratioValue;
+
+    @Column(name = "method_id")
+    private long methodId;
 
     public long getRatioId() {
         return ratioId;
@@ -43,5 +46,13 @@ public class Ratio {
 
     public void setRatioValue(String ratioValue) {
         this.ratioValue = ratioValue;
+    }
+
+    public long getMethodId() {
+        return methodId;
+    }
+
+    public void setMethodId(long methodId) {
+        this.methodId = methodId;
     }
 }
