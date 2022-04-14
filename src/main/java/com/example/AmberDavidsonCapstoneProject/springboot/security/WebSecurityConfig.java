@@ -44,4 +44,10 @@
 //                .withUser("superadmin").password(passwordEncoder.encode("superadmin")).roles("USER", "ADMIN", "SUPERADMIN");
 //
 //    }
+//    @Override
+//    public void configure(WebSecurity web) throws Exception {
+//        web
+//        .ignoring()
+//        .antMatchers("/static/**");
+//        }
 //}

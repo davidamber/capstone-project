@@ -26,6 +26,7 @@ public class UserList {
     public long getId() {
         return id;
     }
+
     @Column(name = "strength")
     private String strength;
 
