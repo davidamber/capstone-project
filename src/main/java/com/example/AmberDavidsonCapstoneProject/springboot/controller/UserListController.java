@@ -81,7 +81,7 @@ public class UserListController {
 
     @GetMapping("/finalResult")
     public String result() {
-        return "brew_results";
+        return "final_result";
     }
 
     @GetMapping("/form")
