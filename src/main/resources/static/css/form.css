@@ -26,8 +26,10 @@ body {
     color: black;
 }
 .form-select {
-    justify-content: center;
     width: 50%;
+    display:inline-block;
+    float: none;
+    text-align: center;
 }
 #continue {
     background-color: #9ab0a6;
