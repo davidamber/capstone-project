@@ -14,8 +14,8 @@ public class BrewResults {
     private long userId;
 
 
-    @Column(name = "ratio_id")
-    private long ratioId;
+    @Column(name = "ratio_value")
+    private long ratioValue;
 
     public long getBrewResultsId() {
         return brewResultsId;
@@ -33,11 +33,11 @@ public class BrewResults {
         this.userId = userId;
     }
 
-    public long getRatioId() {
-        return ratioId;
+    public long getRatioValue() {
+        return ratioValue;
     }
 
-    public void setRatioId(long ratioId) {
-        this.ratioId = ratioId;
+    public void setRatioValue(long ratioValue) {
+        this.ratioValue = ratioValue;
     }
 }

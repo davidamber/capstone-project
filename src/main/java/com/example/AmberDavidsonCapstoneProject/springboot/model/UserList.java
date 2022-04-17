@@ -13,7 +13,8 @@ public class UserList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @Column(name = "user_id")
+    private long userId;
 
     @Column(name = "first_name")
     private String firstName;
@@ -24,7 +25,7 @@ public class UserList {
     @Column(name = "email")
     private String email;
     public long getId() {
-        return id;
+        return userId;
     }
 
     @Column(name = "strength")
@@ -34,7 +35,7 @@ public class UserList {
     private String method;
 
     public void setId(long id) {
-        this.id = id;
+        this.userId = userId;
     }
     public String getFirstName() {
         return firstName;
