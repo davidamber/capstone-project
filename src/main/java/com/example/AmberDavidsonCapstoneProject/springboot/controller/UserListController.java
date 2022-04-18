@@ -28,7 +28,6 @@ public class UserListController {
         // create model attribute to bind form data
         UserList userList = new UserList();
         model.addAttribute("userList", userList);
-
         return "register";
     }
 
@@ -64,28 +63,4 @@ public class UserListController {
         return "register";
     }
 
-    @GetMapping("/amount")
-    public String amount() {
-        return "amount";
-    }
-
-    @GetMapping("/brewMethod")
-    public String brewMethod() {
-        return "brew_method";
-    }
-
-    @GetMapping("/strength")
-    public String strength() {
-        return "strength";
-    }
-
-    @GetMapping("/finalResult")
-    public String result() {
-        return "final_result";
-    }
-
-    @GetMapping("/form")
-    public String form() {
-        return "form";
-    }
 }

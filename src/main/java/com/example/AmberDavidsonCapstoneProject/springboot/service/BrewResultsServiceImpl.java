@@ -26,4 +26,9 @@ public class BrewResultsServiceImpl implements BrewResultsService {
     public BrewResults getBrewResultsById(long id) {
         return null;
     }
+
+    @Override
+    public void deleteBrewResultsById(long id) {
+
+    }
 }

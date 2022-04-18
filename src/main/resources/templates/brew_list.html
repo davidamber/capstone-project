@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>User List</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap"
+          rel="stylesheet">
+    <style>
+        body {
+            background-color: #eeddc7;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+        }
+        #update {
+            background-color: #9ab0a6;
+        }
+        #add {
+            background-color: #9ab0a6;
+        }
+        th {
+            background-color: #9ab0a6;
+        }
+        tr {
+            background-color: #a4d0bd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-2">
+    <h1>Brew History</h1><br>
+
+    <a th:href="@{/form}" class="btn btn-sm btn-light mb-3" id="add"> Create New Brew </a>
+
+    <table border="1" class="table table-striped table-responsive-md">
+        <thead>
+        <tr>
+            <th>Brew Method</th>
+            <th>Coffee Amount</th>
+            <th>Water Amount</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="brewResults : ${listBrewResults}">
+            <td th:text="${brewResults.methodName}"></td>
+            <td th:text="${brewResults.coffeeAmount}"></td>
+            <td th:text="${brewResults.waterAmount}"></td>
+            <td>
+                <form th:action="@{/deleteBrew/{id}(id=${brewResults.id})}" method="post">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/index.html}" id="index">Logout</a>
+</div>
+</body>
+
+</html>

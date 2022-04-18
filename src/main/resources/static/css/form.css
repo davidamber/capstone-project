@@ -22,7 +22,7 @@ body {
 }
 .btn {
     object-position: center;
-    background-color: #b7a99a;
+    background-color: #a4d0bd;
     color: black;
     font-weight: bold;
 }
@@ -31,7 +31,6 @@ body {
     display:inline-block;
     float: none;
     text-align: center;
-    background-color: #b7a99a;
     font-weight: bold;
 }
 #continue {

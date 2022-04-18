@@ -7,5 +7,5 @@ public interface BrewResultsService {
     List< BrewResults > getAllBrewResults();
     void saveBrewResults(BrewResults brewResults);
     BrewResults getBrewResultsById(long id);
-    // void deleteBrewResultsById(long id);
+    void deleteBrewResultsById(long id);
 }

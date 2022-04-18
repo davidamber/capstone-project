@@ -2,6 +2,10 @@
 ## This is a coffee calculator app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
 
 ## Daily Progress
+- April 18th (50% done)
+  - Finished modifying database tables/models
+  - Finished controllers
+  - Added 404 html file
 - April 15th (45% done)
   - Continued work on entity models
 - April 14th (45% done)
