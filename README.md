@@ -15,6 +15,7 @@ This is a coffee app that calculates the amount of water and coffee that you nee
 ## Daily Progress
 - April 19th (60%)
   - Implemented Thymeleaf for results page
+  - Updated tables in DB
   - Need to complete: implement security (login & registration), background image for login, logic for ratio calculations
 - April 18th (50% done)
   - Finished modifying database tables/models
