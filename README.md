@@ -2,7 +2,7 @@
 ## Coffee Calculator App
 This is a coffee app that calculates the amount of water and coffee that you need based on the amount of coffee and brew method that you choose.
 ## Contents
-[Daily Progress]
+[Daily Progress](#daily-progress)
 User Stories
 User
 Admin
