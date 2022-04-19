@@ -1,7 +1,8 @@
 
 ## Coffee Calculator App
-This is a coffee app that calculates the amount of water and coffee that you need based on the amount of coffee and brew method that you choose
+This is a coffee app that calculates the amount of water and coffee that you need based on the amount of coffee and brew method that you choose.
 ## Contents
+
 ## Daily Progress
 - April 18th (50% done)
   - Finished modifying database tables/models
@@ -20,7 +21,7 @@ This is a coffee app that calculates the amount of water and coffee that you nee
 - April 11th (30% done)
   - Worked on mapping within controller for CRUD operations
 
-### User Stories:
+## User Stories:
 - As a user, I want to create an account with a username and password so that my info and preferences will be saved in the app.
   - Task: Implement login functionality
   - Task: Decide on information and preferences to be collected for account
