@@ -16,14 +16,14 @@ public class BrewResults {
     @Column(name = "ratio_value")
     private long ratioValue;
 
-    @Column(name = "coffee_amount")
-    private long coffeeAmount;
+    @Column(name = "coffee")
+    private long coffee;
 
-    @Column(name = "water_amount")
-    private long waterAmount;
+    @Column(name = "water")
+    private long water;
 
     @Column(name = "method_name")
-    private long methodName;
+    private String methodName;
 
     public long getBrewResultsId() {
         return brewResultsId;
@@ -49,27 +49,27 @@ public class BrewResults {
         this.ratioValue = ratioValue;
     }
 
-    public long getCoffeeAmount() {
-        return coffeeAmount;
+    public long getCoffee() {
+        return coffee;
     }
 
-    public void setCoffeeAmount(long coffeeAmount) {
-        this.coffeeAmount = coffeeAmount;
+    public void setCoffeeAmount(long coffee) {
+        this.coffee = coffee;
     }
 
     public long getWaterAmount() {
-        return waterAmount;
+        return water;
     }
 
-    public void setWaterAmount(long waterAmount) {
-        this.waterAmount = waterAmount;
+    public void setWaterAmount(long water) {
+        this.water = water;
     }
 
-    public long getMethodName() {
+    public String getMethodName() {
         return methodName;
     }
 
-    public void setMethodName(long methodName) {
+    public void setMethodName(String methodName) {
         this.methodName = methodName;
     }
 }

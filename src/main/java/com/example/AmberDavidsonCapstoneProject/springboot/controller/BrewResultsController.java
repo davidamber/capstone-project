@@ -1,9 +1,11 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.controller;
 
 import com.example.AmberDavidsonCapstoneProject.springboot.model.BrewResults;
+import com.example.AmberDavidsonCapstoneProject.springboot.model.UserList;
 import com.example.AmberDavidsonCapstoneProject.springboot.service.BrewResultsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,14 +32,15 @@ public class BrewResultsController {
 
     // save user's brew
     @PostMapping("/saveBrewResults")
-    public String saveUserList(@ModelAttribute("brewResults") BrewResults brewResults) {
+    public String saveBrewResults(@ModelAttribute BrewResults brewResults) {
         brewResultsService.saveBrewResults(brewResults);
-        return "redirect:/brewResults";
+        return "brew_list";
     }
-    @PostMapping("/deleteBrewResults/{id}")
-    public String deleteUserList(@PathVariable(value = "id") long id) {
 
-        // call delete employee method
+    @PostMapping("/deleteBrewResults/{id}")
+    public String deleteBrewResults(@PathVariable(value = "id") long id) {
+
+        // call delete user  method
         this.brewResultsService.deleteBrewResultsById(id);
         return "redirect:/brewList";
     }

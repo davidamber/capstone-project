@@ -22,6 +22,9 @@ public class UserPreference {
     @Column(name = "method_name")
     private String brewMethodName;
 
+    //@transient
+    private int cups;
+
     public long getBrewMethodId() {
         return brewMethodId;
     }
@@ -44,5 +47,23 @@ public class UserPreference {
 
     public void setBrewMethodName(String brewMethodName) {
         this.brewMethodName = brewMethodName;
+    }
+
+    public int getCups() {
+        return cups;
+    }
+
+    public void setCups(int cups) {
+        this.cups = cups;
+    }
+
+    @Override
+    public String toString() {
+        return "UserPreference{" +
+                "brewMethodId=" + brewMethodId +
+                ", userId=" + userId +
+                ", brewMethodName='" + brewMethodName + '\'' +
+                ", cups=" + cups +
+                '}';
     }
 }

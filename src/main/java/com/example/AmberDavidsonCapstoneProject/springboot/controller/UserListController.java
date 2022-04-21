@@ -16,9 +16,24 @@ public class UserListController {
     @Autowired
     private UserListService userListService;
 
-    // display list of employees
+    @GetMapping("/")
+    public String root() {
+        return "index";
+    }
+
+    @GetMapping("/user")
+    public String userIndex() {
+        return "user/index";
+    }
+
+    @GetMapping("/login")
+    public String login(Model model) {
+        return "login";
+    }
+
+    // display list of users
     @GetMapping("/userList")
-    public String viewHomePage(Model model) {
+    public String viewUserList(Model model) {
         model.addAttribute("listUserLists", userListService.getAllUserLists());
         return "user_list";
     }

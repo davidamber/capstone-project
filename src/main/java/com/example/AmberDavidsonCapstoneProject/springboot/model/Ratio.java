@@ -16,7 +16,7 @@ public class Ratio {
     private long ratioId;
 
     @Column(name = "ratio_value")
-    private String ratioValue;
+    private long ratioValue;
 
     @Column(name = "method_id")
     private long methodId;
@@ -29,11 +29,11 @@ public class Ratio {
         this.ratioId = ratioId;
     }
 
-    public String getRatioValue() {
+    public long getRatioValue() {
         return ratioValue;
     }
 
-    public void setRatioValue(String ratioValue) {
+    public void setRatioValue(long ratioValue) {
         this.ratioValue = ratioValue;
     }
 

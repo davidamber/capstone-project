@@ -28,11 +28,9 @@ public class UserList {
         return userId;
     }
 
-    @Column(name = "strength")
-    private String strength;
 
-    @Column(name = "method")
-    private String method;
+    @Column(name = "method_name")
+    private String methodName;
 
     public void setId(long id) {
         this.userId = userId;
@@ -43,11 +41,8 @@ public class UserList {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getStrength() {
-        return strength;
-    }
-    public String getMethod() {
-        return method;
+    public String getMethodName() {
+        return methodName;
     }
 
     public String getLastName() {
@@ -62,11 +57,8 @@ public class UserList {
     public void setEmail(String email) {
         this.email = email;
     }
-    public void setStrength(String strength) {
-        this.strength = strength;
-    }
-    public void setMethod(String method) {
-        this.method = method;
+    public void setMethodName(String methodName) {
+        this.methodName = methodName;
     }
 }
 

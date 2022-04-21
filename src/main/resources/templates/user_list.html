@@ -26,6 +26,15 @@
     #add {
       background-color: #9ab0a6;
     }
+    th {
+      background-color: #9ab0a6;
+    }
+    td {
+      background-color: #a4d0bd;
+    }
+    body {
+      background-color: #eeddc7;
+    }
   </style>
 </head>
 <body>
@@ -53,7 +62,7 @@
       <td th:text="${userList.email}"></td>
       <td th:text="${userList.strength}"></td>
       <td th:text="${userList.method}"></td>
-      <td> <a th:href="@{/showFormForUpdate/{id}(id=${userList.id})}" class="btn btn-light " id="update">Update</a>
+      <td> <a th:href="@{/showFormForUpdate/{id}(id=${userList.id})}" class="btn btn-light" id="update">Update</a>
         <form th:action="@{/deleteUserList/{id}(id=${userList.id})}" method="post">
           <button class="btn btn-danger">Delete</button>
         </form>

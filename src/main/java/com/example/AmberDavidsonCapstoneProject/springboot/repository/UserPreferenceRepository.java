@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserPreferenceRepository extends JpaRepository<UserPreference, Long>{
-
+    UserPreference getByBrewMethodId(long id);
 }
