@@ -26,7 +26,8 @@ public class BrewResultsController {
     }
 
     @GetMapping("/brewList")
-    public String brewList() {
+    public String brewList(Model model) {
+        model.addAttribute("listBrewResults", brewResultsService.getAllBrewResults());
         return "brew_list";
     }
 
@@ -42,8 +43,15 @@ public class BrewResultsController {
         return "brew_list";
     }
 
-    @PostMapping("/deleteBrewResults/{id}")
-    public String deleteBrewResults(@PathVariable(value = "id") long id) {
+    @GetMapping("/showFormForBrewUpdate/{id}")
+    public String showFormForBrewUpdate(@PathVariable(value = "id") long id, Model model) {
+        BrewResults brewResults = brewResultsService.getBrewResultsById(id);
+        model.addAttribute("brewResults", brewResults);
+        return "update_brew";
+    }
+
+    @PostMapping("/deleteBrew/{id}")
+    public String deleteBrew(@PathVariable(value = "id") long id) {
 
         // call delete user  method
         this.brewResultsService.deleteBrewResultsById(id);
@@ -51,7 +59,7 @@ public class BrewResultsController {
     }
 
     @GetMapping("/logout")
-    public String logout(HttpServletRequest request){
+    public String logout(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
         httpSession.invalidate();
         return "redirect:/login";

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>User Management System</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+  .btn {
+    background-color: #9ab0a6;
+  }
+</style>
+<body>
+<div class="container">
+  <hr>
+  <h2>Update Brew</h2>
+
+  <form action="#" th:action="@{/saveBrewResults}" th:object="${brewResults}" method="POST">
+
+    <!-- Add hidden form field to handle update -->
+    <input type="hidden" th:field="*{id}" />
+
+<!--    <input type="text" th:field="*{methodName}" placeholder="Method Name" class="form-control mb-4 col-4">-->
+
+    <select class="form-select" th:field="*{methodName}" aria-label="Default select">
+      <!--        <option selected="">Preferred Coffee Method</option>-->
+      <option th:value="'Coffee Machine'" th:text="Coffee-Machine">Coffee Machine</option>
+      <option th:value="'Pour-over'" th:text="Pour-over">Pour-over</option>
+      <option th:value="'French Press'" th:text="French-Press">French Press</option>
+      <option th:value="'Aeropress'" th:text="Aeropress">Aeropress</option>
+    </select><br><br>
+
+    <input type="text" th:field="*{coffee}" placeholder="Coffee Amount" class="form-control mb-4 col-4">
+
+    <input type="text" th:field="*{water}" placeholder="Water Amount" class="form-control mb-4 col-4">
+
+    <!--        <input type="text" th:field="*{strength}" placeholder="Strength" class="form-control mb-4 col-4">-->
+
+    <!--        <input type="text" th:field="*{method}" placeholder="Method" class="form-control mb-4 col-4">-->
+
+<!--    <select class="form-select" th:field="*{coffee}" aria-label="Default select">-->
+<!--      &lt;!&ndash;        <option selected="">Preferred Coffee Strength</option>&ndash;&gt;-->
+<!--      <option th:value="'Regular'" th:text="Regular">Regular</option>-->
+<!--      <option th:value="'Strong'" th:text="Strong">Strong</option>-->
+<!--    </select><br><br>-->
+
+    <button type="submit" class="btn col-2"> Update User</button>
+  </form>
+
+  <hr>
+
+  <a th:href="@{/brewList}"> Back to User List</a>
+</div>
+</body>
+
+</html>

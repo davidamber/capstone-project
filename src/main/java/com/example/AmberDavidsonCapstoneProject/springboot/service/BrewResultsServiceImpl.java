@@ -38,6 +38,7 @@ public class BrewResultsServiceImpl implements BrewResultsService {
 
     @Override
     public void deleteBrewResultsById(long id) {
-        brewResultsRepository.deleteById(id);
+        BrewResults brewResults = getBrewResultsById(id);
+        brewResultsRepository.delete(brewResults);
     }
 }

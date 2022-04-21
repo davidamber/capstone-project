@@ -45,18 +45,21 @@
         <table class="center" style="width:70%">
             <tr>
                 <th>Brew Method</th>
-                <th>Coffee Amount</th>
-                <th>Water Amount</th>
+                <th>Cups</th>
+                <th>Coffee Amount (g)</th>
+                <th>Water Amount (g)</th>
             </tr>
             <tr>
                 <td th:text="*{methodName}"></td>
+                <td th:text="*{cups}"></td>
                 <td th:text="*{coffee}"></td>
                 <td th:text="*{water}"></td>
             </tr>
         </table><br>
-        <input type="text" th:field="*{methodName}"></input>
-        <input type="text" th:field="*{coffee}"></input>
-        <input type="text" th:field="*{water}"></input>
+        <input type="hidden" th:field="*{methodName}"></input>
+        <input type="hidden" th:field="*{cups}"></input>
+        <input type="hidden" th:field="*{coffee}"></input>
+        <input type="hidden" th:field="*{water}"></input>
 
         <button type="submit" class="btn btn-md">Save Brew</button>
     </form><br>

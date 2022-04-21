@@ -22,7 +22,7 @@ public class UserPreference {
     @Column(name = "method_name")
     private String brewMethodName;
 
-    //@transient
+    // @transient
     private int cups;
 
     public long getBrewMethodId() {

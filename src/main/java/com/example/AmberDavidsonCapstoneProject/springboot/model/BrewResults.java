@@ -25,6 +25,9 @@ public class BrewResults {
     @Column(name = "method_name")
     private String methodName;
 
+    @Column(name = "cups")
+    private int cups;
+
     public long getId() {
         return id;
     }
@@ -71,5 +74,13 @@ public class BrewResults {
 
     public void setMethodName(String methodName) {
         this.methodName = methodName;
+    }
+
+    public int getCups() {
+        return cups;
+    }
+
+    public void setCups(int cups) {
+        this.cups = cups;
     }
 }

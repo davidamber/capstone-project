@@ -48,17 +48,19 @@
         <thead>
         <tr>
             <th>Brew Method</th>
-            <th>Coffee Amount</th>
-            <th>Water Amount</th>
+            <th>Cups</th>
+            <th>Coffee Amount (g)</th>
+            <th>Water Amount (g)</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="brewResults : ${listBrewResults}">
             <td th:text="${brewResults.methodName}"></td>
+            <td th:text="${brewResults.cups}"></td>
             <td th:text="${brewResults.coffee}"></td>
             <td th:text="${brewResults.water}"></td>
-            <td>
+            <td> <a th:href="@{/showFormForBrewUpdate/{id}(id=${brewResults.id})}" class="btn btn-light" id="update">Update</a>
                 <form th:action="@{/deleteBrew/{id}(id=${brewResults.id})}" method="post">
                     <button class="btn btn-danger">Delete</button>
                 </form>
