@@ -2,6 +2,13 @@
 ## This is a coffee calculator app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
 
 ## Daily Progress
+- April 20th (75% done)
+  - Completed Spring Security for login & registration
+  - Completed ThymeLeaf to link form and brew results
+  - Started logic for coffee/water calculations
+- April 19th (60% done)
+  - Started Spring Security
+  - Started adding ThymeLeaf to form and brew results pages
 - April 18th (50% done)
   - Finished modifying database tables/models
   - Finished controllers
