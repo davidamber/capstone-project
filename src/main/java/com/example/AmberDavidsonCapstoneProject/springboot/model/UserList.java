@@ -28,7 +28,6 @@ public class UserList {
         return userId;
     }
 
-
     @Column(name = "method_name")
     private String methodName;
 

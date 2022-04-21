@@ -1,5 +1,6 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.controller;
 
+import com.example.AmberDavidsonCapstoneProject.springboot.model.BrewResults;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.Ratio;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.UserPreference;
 import com.example.AmberDavidsonCapstoneProject.springboot.service.UserPreferenceService;
@@ -30,9 +31,11 @@ public class UserPreferenceController {
         double water = userPreference.getCups()*236.5;
         double coffee = water/17.0;
 
-        model.addAttribute("methodName", userPreference.getBrewMethodName());
-        model.addAttribute("coffee", coffee);
-        model.addAttribute("water", water);
+        BrewResults brewResults = new BrewResults();
+        brewResults.setCoffee(coffee);
+        brewResults.setWater(water);
+        brewResults.setMethodName(userPreference.getBrewMethodName());
+        model.addAttribute("brewResults", brewResults);
         return "brew_results";
     }
 }

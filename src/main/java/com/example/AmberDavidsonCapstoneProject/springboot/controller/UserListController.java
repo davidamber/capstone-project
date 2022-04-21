@@ -38,13 +38,13 @@ public class UserListController {
         return "user_list";
     }
 
-    @GetMapping("/register")
-    public String showNewUserListForm(Model model) {
-        // create model attribute to bind form data
-        UserList userList = new UserList();
-        model.addAttribute("userList", userList);
-        return "register";
-    }
+//    @GetMapping("/register")
+//    public String showNewUserListForm(Model model) {
+//        // create model attribute to bind form data
+//        UserList userList = new UserList();
+//        model.addAttribute("userList", userList);
+//        return "register";
+//    }
 
     @PostMapping("/saveUserList")
     public String saveUserList(@ModelAttribute("userList") UserList userList) {

@@ -8,7 +8,7 @@ public class BrewResults {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long brewResultsId;
+    private long id;
 
     @Column(name = "user_id")
     private long userId;
@@ -17,20 +17,20 @@ public class BrewResults {
     private long ratioValue;
 
     @Column(name = "coffee")
-    private long coffee;
+    private double coffee;
 
     @Column(name = "water")
-    private long water;
+    private double water;
 
     @Column(name = "method_name")
     private String methodName;
 
-    public long getBrewResultsId() {
-        return brewResultsId;
+    public long getId() {
+        return id;
     }
 
-    public void setBrewResultsId(long brewResultsId) {
-        this.brewResultsId = brewResultsId;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getUserId() {
@@ -49,19 +49,19 @@ public class BrewResults {
         this.ratioValue = ratioValue;
     }
 
-    public long getCoffee() {
+    public double getCoffee() {
         return coffee;
     }
 
-    public void setCoffeeAmount(long coffee) {
+    public void setCoffee(double coffee) {
         this.coffee = coffee;
     }
 
-    public long getWaterAmount() {
+    public double getWater() {
         return water;
     }
 
-    public void setWaterAmount(long water) {
+    public void setWater(double water) {
         this.water = water;
     }
 

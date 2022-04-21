@@ -1240,69 +1240,64 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="347" parent="339" name="brew_results_id">
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="347" parent="339" name="results_id">
+      <DataType>int(11)|0s</DataType>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="348" parent="339" name="ratio_id">
-      <DataType>bigint(20)|0s</DataType>
+    <column id="348" parent="339" name="user_id">
+      <DataType>int(11)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="349" parent="339" name="user_id">
-      <DataType>bigint(20)|0s</DataType>
+    <column id="349" parent="339" name="ratio_id">
+      <DataType>int(11)|0s</DataType>
       <Position>3</Position>
     </column>
     <column id="350" parent="339" name="ratio_value">
-      <DataType>bigint(20)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="351" parent="339" name="coffee_amount">
-      <DataType>bigint(20)|0s</DataType>
+    <column id="351" parent="339" name="method_name">
+      <DataType>varchar(20)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="352" parent="339" name="method_name">
+    <column id="352" parent="339" name="coffee">
       <DataType>bigint(20)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="353" parent="339" name="water_amount">
+    <column id="353" parent="339" name="water">
       <DataType>bigint(20)|0s</DataType>
       <Position>7</Position>
     </column>
-    <key id="354" parent="339" name="PRIMARY">
-      <ColNames>brew_results_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
+    <column id="354" parent="339" name="brew_results_id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
     <column id="355" parent="340" name="next_val">
       <DataType>bigint(20)|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="356" parent="341" name="brew_method_id">
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="356" parent="341" name="method_id">
+      <DataType>int(11)|0s</DataType>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="357" parent="341" name="method_name">
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="358" parent="341" name="cups">
+    <column id="358" parent="341" name="user_id">
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="359" parent="341" name="user_id">
-      <DataType>bigint(20)|0s</DataType>
+    <column id="359" parent="341" name="cups">
+      <DataType>int(11)|0s</DataType>
       <Position>4</Position>
     </column>
-    <key id="360" parent="341" name="PRIMARY">
-      <ColNames>brew_method_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
+    <column id="360" parent="341" name="brew_method_id">
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
     <column id="361" parent="342" name="ratio_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1317,120 +1312,112 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <DataType>int(11)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="364" parent="342" name="ratio_name">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <key id="365" parent="342" name="PRIMARY">
+    <key id="364" parent="342" name="PRIMARY">
       <ColNames>ratio_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="366" parent="343" name="id">
+    <column id="365" parent="343" name="id">
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="367" parent="343" name="name">
+    <column id="366" parent="343" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="368" parent="343" name="PRIMARY">
+    <key id="367" parent="343" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="369" parent="344" name="id">
+    <column id="368" parent="344" name="id">
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="370" parent="344" name="email">
+    <column id="369" parent="344" name="email">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="371" parent="344" name="first_name">
+    <column id="370" parent="344" name="first_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="372" parent="344" name="last_name">
+    <column id="371" parent="344" name="last_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="373" parent="344" name="password">
+    <column id="372" parent="344" name="password">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
     </column>
-    <index id="374" parent="344" name="UKob8kqyqqgmefl0aco34akdtpe">
+    <index id="373" parent="344" name="UKob8kqyqqgmefl0aco34akdtpe">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="375" parent="344" name="PRIMARY">
+    <key id="374" parent="344" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="376" parent="344" name="UKob8kqyqqgmefl0aco34akdtpe">
+    <key id="375" parent="344" name="UKob8kqyqqgmefl0aco34akdtpe">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UKob8kqyqqgmefl0aco34akdtpe</UnderlyingIndexName>
     </key>
-    <column id="377" parent="345" name="user_id">
+    <column id="376" parent="345" name="user_id">
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="378" parent="345" name="email">
+    <column id="377" parent="345" name="email">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="379" parent="345" name="first_name">
+    <column id="378" parent="345" name="first_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="380" parent="345" name="last_name">
+    <column id="379" parent="345" name="last_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="381" parent="345" name="method">
+    <column id="380" parent="345" name="method_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="382" parent="345" name="method_name">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>6</Position>
-    </column>
-    <key id="383" parent="345" name="PRIMARY">
+    <key id="381" parent="345" name="PRIMARY">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="384" parent="346" name="user_id">
+    <column id="382" parent="346" name="user_id">
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="385" parent="346" name="role_id">
+    <column id="383" parent="346" name="role_id">
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="386" parent="346" name="FKgd3iendaoyh04b95ykqise6qh">
+    <foreign-key id="384" parent="346" name="FKgd3iendaoyh04b95ykqise6qh">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <foreign-key id="387" parent="346" name="FKt4v0rrweyk393bdgt107vdx0x">
+    <foreign-key id="385" parent="346" name="FKt4v0rrweyk393bdgt107vdx0x">
       <ColNames>role_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>role</RefTableName>
     </foreign-key>
-    <index id="388" parent="346" name="FKgd3iendaoyh04b95ykqise6qh">
+    <index id="386" parent="346" name="FKgd3iendaoyh04b95ykqise6qh">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="389" parent="346" name="FKt4v0rrweyk393bdgt107vdx0x">
+    <index id="387" parent="346" name="FKt4v0rrweyk393bdgt107vdx0x">
       <ColNames>role_id</ColNames>
       <Type>btree</Type>
     </index>
