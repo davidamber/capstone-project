@@ -13,8 +13,7 @@
 - ![Schema Diagram](/resources/static/images/SchemaDiagram.png)
 
 ## Daily Progress
-- April 22nd (75% done)
-  -
+- April 22nd (67% done)
 - April 21st (80% done)
   - Completed ThymeLeaf mapping for "save brew" function
   - Implemented CRUD operations for brew results (update, delete)
