@@ -21,4 +21,9 @@ public class AmberDavidsonCapstoneProjectApplication {
 	public BCryptPasswordEncoder passwordEncoder(){
 		return new BCryptPasswordEncoder();
 	}
+
+	@Bean
+	public CommandLineRunner commandLineRunner() {
+		return args -> System.out.println("My application is running");
+	}
 }
