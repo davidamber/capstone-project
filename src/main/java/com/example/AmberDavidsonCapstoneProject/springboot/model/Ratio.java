@@ -15,11 +15,8 @@ public class Ratio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long ratioId;
 
-    @Column(name = "ratio_name")
-    private String ratioName;
-
     @Column(name = "ratio_value")
-    private String ratioValue;
+    private long ratioValue;
 
     @Column(name = "method_id")
     private long methodId;
@@ -32,19 +29,11 @@ public class Ratio {
         this.ratioId = ratioId;
     }
 
-    public String getRatioName() {
-        return ratioName;
-    }
-
-    public void setRatioName(String ratioName) {
-        this.ratioName = ratioName;
-    }
-
-    public String getRatioValue() {
+    public long getRatioValue() {
         return ratioValue;
     }
 
-    public void setRatioValue(String ratioValue) {
+    public void setRatioValue(long ratioValue) {
         this.ratioValue = ratioValue;
     }
 

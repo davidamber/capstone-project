@@ -1,8 +1,9 @@
-//package springboot.security;
+//package com.example.AmberDavidsonCapstoneProject.springboot.security;
 //
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+//import org.springframework.security.config.annotation.web.builders.WebSecurity;
 //import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 //import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 //import org.springframework.security.crypto.factory.PasswordEncoderFactories;
@@ -17,10 +18,10 @@
 //        // @formatter:off
 //        http.authorizeRequests()
 //                .mvcMatchers("/login").permitAll()
-////                .mvcMatchers("/deleteEmployee/**").hasAnyRole("SUPERADMIN")
-////                .mvcMatchers("/showFormForUpdate/**").hasAnyRole("ADMIN", "SUPERADMIN")
-////                .mvcMatchers("/showEmployeeForm/**").hasAnyRole("ADMIN", "SUPERADMIN")
-////                .mvcMatchers("/saveEmployee/**").hasAnyRole("ADMIN", "SUPERADMIN")
+//                .mvcMatchers("/deleteEmployee/**").hasAnyRole("SUPERADMIN")
+//                .mvcMatchers("/showFormForUpdate/**").hasAnyRole("ADMIN", "SUPERADMIN")
+//                .mvcMatchers("/showEmployeeForm/**").hasAnyRole("ADMIN", "SUPERADMIN")
+//                .mvcMatchers("/saveEmployee/**").hasAnyRole("ADMIN", "SUPERADMIN")
 //                .mvcMatchers("/**").hasAnyRole("USER", "ADMIN", "SUPERADMIN")
 //                .anyRequest().authenticated()
 //                .and()

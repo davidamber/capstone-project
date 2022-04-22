@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootConfiguration
 @EnableAutoConfiguration
@@ -15,4 +17,13 @@ public class AmberDavidsonCapstoneProjectApplication {
 		SpringApplication.run(AmberDavidsonCapstoneProjectApplication.class, args);
 	}
 
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder(){
+		return new BCryptPasswordEncoder();
+	}
+
+	@Bean
+	public CommandLineRunner commandLineRunner() {
+		return args -> System.out.println("My application is running");
+	}
 }

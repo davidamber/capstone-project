@@ -24,13 +24,17 @@ body {
     object-position: center;
     background-color: #a4d0bd;
     color: black;
+    font-weight: bold;
 }
 .form-select {
-    justify-content: center;
-    width: 50%;
+    width: 30%;
+    display:inline-block;
+    float: none;
+    text-align: center;
 }
 #continue {
     background-color: #9ab0a6;
+    font-weight: normal;
 }
 #img2,#img3,#img4,#img5 {
     background-color: #a4d0bd;

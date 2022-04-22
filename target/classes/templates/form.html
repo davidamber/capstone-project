@@ -15,16 +15,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap"
           rel="stylesheet">
 
-    <title>Title</title>
+    <title>Options</title>
     <link rel="stylesheet" type="text/css" href="/css/form.css">
 </head>
 <body>
-<h3>How many cups do you want?</h3><br>
+<h3>How Many Cups?</h3><br>
 
 <img src="images/noun-takeaway-coffee-cup-1219977.png" alt="travel coffee cup" id="img1"><br>
 
+<!-- Need to implement security first-->
+<form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
+    <input type="hidden" id="id" th:field="*{brewMethodId}" />
+    <input type="hidden" id="id2" th:field="*{userId}" />
+    <label for="">Method:</label>
+    <input type="text" id="id3" th:field="*{brewMethodName}" />
+    <label for="">Amount:</label>
+    <input type="text" id="id4" th:field="*{cups}" /><br>
+
 <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group me-2" id= toolbar role="group" aria-label="First group">
+    <div class="btn-group me-2" id="toolbar" role="group" aria-label="First group">
         <button type="button" class="btn btn-dark">1</button>
         <button type="button" class="btn btn-dark">2</button>
         <button type="button" class="btn btn-dark">3</button>
@@ -38,7 +47,7 @@
         <button type="button" class="btn btn-dark">11</button>
         <button type="button" class="btn btn-dark">12</button>
     </div>
-</div><br>
+</div><br><br>
 
 <!--<h3>Pick your strength:</h3><br>-->
 <!--<img src="images/noun-coffee-beans-2949100.png" alt="coffee beans" id="img2">-->
@@ -46,7 +55,7 @@
 <!--    <option>Regular</option>-->
 <!--    <option>Strong</option>-->
 <!--</select><br>-->
-<h3>Pick your Method:</h3><br>
+<h3>Pick Your Method:</h3><br>
 <div class="container">
     <div class="row">
         <div class="column">
@@ -62,7 +71,7 @@
             <img src="images/noun-aeropress-3626496.png" id="img5" alt="aeropress" style="width:100%">
         </div>
     </div>
-</div>
+</div><br>
 <div>
     <select class="form-select" id="form-select" aria-label="Default select">
         <option>Coffee Machine</option>
@@ -70,7 +79,9 @@
         <option>French Press</option>
         <option>Aeropress</option>
     </select><br><br>
-</div>
-<button type="button" class="btn btn-secondary btn-lg" id="continue">Continue</button><br><br>
+
+</div><br>
+<button type="submit" class="btn btn-secondary btn-lg" id="continue">Continue</button><br><br>
+</form>
 </body>
 </html>

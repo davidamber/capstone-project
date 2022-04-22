@@ -1,7 +1,35 @@
-# Davidson_Amber_Capstone
-## This is a coffee calculator app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
+## Coffee Calculator App
+ This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods, as well as choose how many cups of coffee they want.
+
+## Contents
+- [Case Study Rubric](https://docs.google.com/document/d/176gq1qsX1azl7ckhc3Cu7_LK6oqWOcU28cd-q3jbZQI/edit)
+- [Daily Progress](#daily-progress)
+- [User Stories](#user-stories)
+- [Technical Architecture](#technical-architecture)
+- [Technical Challenges](#technical-challenges)
+- [Lessons Learned](#lessons-learned)
+- [Future Improvements](#future-improvements)
+- [Wire Frame](#wire-frame)
+- ![Schema Diagram](/resources/static/images/SchemaDiagram.png)
 
 ## Daily Progress
+- April 22nd (67% done)
+- April 21st (80% done)
+  - Completed ThymeLeaf mapping for "save brew" function
+  - Implemented CRUD operations for brew results (update, delete)
+- April 20th (75% done)
+  - Completed Spring Security for login & registration
+  - Completed ThymeLeaf to link form and brew results
+  - Started logic for coffee/water calculations
+- April 19th (60% done)
+  - Started Spring Security
+  - Started adding ThymeLeaf to form and brew results pages
+- April 18th (50% done)
+  - Finished modifying database tables/models
+  - Finished controllers
+  - Added 404 html file
+- April 15th (45% done)
+  - Continued work on entity models
 - April 14th (45% done)
   - Reworked database tables
   - Updated entity models
@@ -40,3 +68,17 @@
 
 Other tasks:
 - Create database
+
+## Technical Architecture
+
+## Technical Challenges
+- A technical challenge I faced was 
+## Lessons Learned
+- One of the important lessons I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my technical architecture.
+- I've also learned how important it is to rely on your teammates to help you succeed. I experienced a highly collaborative environment in this cohort, and I can honestly say that I wouldn't have been able to build this app without their help and collaboration.
+## Future Improvements
+- Some features I would like to include in the future are adding the ability to choose desired strength of coffee, the ability to choose different units of measure (tablespoons, ounces, etc.), as well as including grind size
+- Video tutorial on the results page would change depending on coffee method chosen
+## Wire Frames
+
+## Schema Diagram

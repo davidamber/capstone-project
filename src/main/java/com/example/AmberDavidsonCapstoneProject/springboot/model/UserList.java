@@ -13,7 +13,8 @@ public class UserList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @Column(name = "user_id")
+    private long userId;
 
     @Column(name = "first_name")
     private String firstName;
@@ -24,17 +25,14 @@ public class UserList {
     @Column(name = "email")
     private String email;
     public long getId() {
-        return id;
+        return userId;
     }
 
-    @Column(name = "strength")
-    private String strength;
-
-    @Column(name = "method")
-    private String method;
+    @Column(name = "method_name")
+    private String methodName;
 
     public void setId(long id) {
-        this.id = id;
+        this.userId = userId;
     }
     public String getFirstName() {
         return firstName;
@@ -42,11 +40,8 @@ public class UserList {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getStrength() {
-        return strength;
-    }
-    public String getMethod() {
-        return method;
+    public String getMethodName() {
+        return methodName;
     }
 
     public String getLastName() {
@@ -61,11 +56,8 @@ public class UserList {
     public void setEmail(String email) {
         this.email = email;
     }
-    public void setStrength(String strength) {
-        this.strength = strength;
-    }
-    public void setMethod(String method) {
-        this.method = method;
+    public void setMethodName(String methodName) {
+        this.methodName = methodName;
     }
 }
 

@@ -16,21 +16,35 @@ public class UserListController {
     @Autowired
     private UserListService userListService;
 
-    // display list of employees
+    @GetMapping("/")
+    public String root() {
+        return "index";
+    }
+
+    @GetMapping("/user")
+    public String userIndex() {
+        return "user/index";
+    }
+
+    @GetMapping("/login")
+    public String login(Model model) {
+        return "login";
+    }
+
+    // display list of users
     @GetMapping("/userList")
-    public String viewHomePage(Model model) {
+    public String viewUserList(Model model) {
         model.addAttribute("listUserLists", userListService.getAllUserLists());
         return "user_list";
     }
 
-    @GetMapping("/register")
-    public String showNewUserListForm(Model model) {
-        // create model attribute to bind form data
-        UserList userList = new UserList();
-        model.addAttribute("userList", userList);
-
-        return "register";
-    }
+//    @GetMapping("/register")
+//    public String showNewUserListForm(Model model) {
+//        // create model attribute to bind form data
+//        UserList userList = new UserList();
+//        model.addAttribute("userList", userList);
+//        return "register";
+//    }
 
     @PostMapping("/saveUserList")
     public String saveUserList(@ModelAttribute("userList") UserList userList) {
@@ -64,28 +78,4 @@ public class UserListController {
         return "register";
     }
 
-    @GetMapping("/amount")
-    public String amount() {
-        return "amount";
-    }
-
-    @GetMapping("/brewMethod")
-    public String brewMethod() {
-        return "brew_method";
-    }
-
-    @GetMapping("/strength")
-    public String strength() {
-        return "strength";
-    }
-
-    @GetMapping("/finalResult")
-    public String result() {
-        return "brew_results";
-    }
-
-    @GetMapping("/form")
-    public String form() {
-        return "form";
-    }
 }
