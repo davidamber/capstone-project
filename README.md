@@ -1,4 +1,4 @@
-## Coffee Calculator App
+## Coffee Calculator App - Amber Davidson
  This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods as well as choose how many cups of coffee they want.
 
 ## Contents
