@@ -11,6 +11,11 @@
   .btn {
     background-color: #9ab0a6;
   }
+  .form-select {
+    width: 33%;
+    height: 35px;
+    color: gray;
+  }
 </style>
 <body>
 <div class="container">
@@ -31,9 +36,9 @@
       <option th:value="'French Press'" th:text="French-Press">French Press</option>
       <option th:value="'Aeropress'" th:text="Aeropress">Aeropress</option>
     </select><br><br>
-
+    <label for="">Coffee Amount:</label>
     <input type="text" th:field="*{coffee}" placeholder="Coffee Amount" class="form-control mb-4 col-4">
-
+    <label for="">Water Amount:</label>
     <input type="text" th:field="*{water}" placeholder="Water Amount" class="form-control mb-4 col-4">
 
     <!--        <input type="text" th:field="*{strength}" placeholder="Strength" class="form-control mb-4 col-4">-->
@@ -46,12 +51,12 @@
 <!--      <option th:value="'Strong'" th:text="Strong">Strong</option>-->
 <!--    </select><br><br>-->
 
-    <button type="submit" class="btn col-2"> Update User</button>
+    <button type="submit" class="btn col-2"> Update Brew</button>
   </form>
 
   <hr>
 
-  <a th:href="@{/brewList}"> Back to User List</a>
+  <a th:href="@{/brewList}"> Back to Brew List</a>
 </div>
 </body>
 

@@ -2,13 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
-          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,43 +20,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap"
           rel="stylesheet">
 
-    <title>Registration</title>
+    <title>Welcome!</title>
     <style>
         body {
             background-color: #eeddc7;
+        }
+        .container {
+            justify-content: center;
+            text-align: center;
         }
         h2 {
             font-size: 65px;
             text-align: center;
             font-family: 'Playfair Display', serif;
         }
+
         #start {
+            text-align: center;
             background-color: #a4d0bd;
-            object-position: center;
+            color: black;
             font-size: 25px;
+            width: 150px;
         }
+
         #logout {
+           text-align: center;
             background-color: #9ab0a6;
+            color: black;
+        }
+        img {
+            width: 250px;
+            height: 250px;
         }
     </style>
 </head>
 <body>
+<div class="container"><br><br>
+    <h2>Let's create your perfect cup of coffee.</h2><br>
+    <img src="images/noun-coffee-3584395.png" alt=""><br><br>
     <div>
-<!--        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>-->
-        <a th:href="@{/logout}" class="btn btn-light" id="logout">Logout</a>
+        <a th:href="@{/form}" class="btn btn-lg btn-dark" id="start">Start</a>
+    </div><br>
+    <div>
+        <a th:href="@{/logout}" class="btn btn-dark" id="logout">Logout</a>
     </div>
-<br>
-<br>
-<div class="container">
-    <h2>Let's create your perfect cup of coffee.</h2>
-<!--    <p>-->
-<!--        Welcome <span sec:authentication="principal.username">User</span>-->
-<!--    </p>-->
 </div>
-    <br>
-    <br>
-    <br>
-    <a th:href="@{/form}" class="btn btn-light" id="start">Start</a>
 
 <script type="text/javascript"
         th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>

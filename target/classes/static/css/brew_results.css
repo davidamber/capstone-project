@@ -33,8 +33,9 @@ iframe {
 }
 .btn {
     object-position: center;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #9ab0a6;
+    color: black;
 }
 a {
     object-position: center;

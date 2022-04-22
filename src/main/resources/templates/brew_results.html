@@ -46,8 +46,8 @@
             <tr>
                 <th>Brew Method</th>
                 <th>Cups</th>
-                <th>Coffee Amount (g)</th>
-                <th>Water Amount (g)</th>
+                <th>Coffee Amount(g)</th>
+                <th>Water Amount(g)</th>
             </tr>
             <tr>
                 <td th:text="*{methodName}"></td>
@@ -61,7 +61,7 @@
         <input type="hidden" th:field="*{coffee}"></input>
         <input type="hidden" th:field="*{water}"></input>
 
-        <button type="submit" class="btn btn-md">Save Brew</button>
+        <button type="submit" class="btn btn-dark btn-md">Save Brew</button>
     </form><br>
     <a th:href="@{/form}" id="newBrew">Create a New Brew</a><br>
     <a th:href="@{/brewList}" id="brewlist">Back to Brew List</a>

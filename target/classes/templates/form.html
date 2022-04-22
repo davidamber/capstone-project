@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="/css/form.css">
 </head>
 <body>
-<h3>How many cups?</h3><br>
+<h3>How Many Cups?</h3><br>
 
 <img src="images/noun-takeaway-coffee-cup-1219977.png" alt="travel coffee cup" id="img1"><br>
 
@@ -27,9 +27,10 @@
 <form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
     <input type="hidden" id="id" th:field="*{brewMethodId}" />
     <input type="hidden" id="id2" th:field="*{userId}" />
+    <label for="">Method:</label>
     <input type="text" id="id3" th:field="*{brewMethodName}" />
-    <input type="text" id="id4" th:field="*{cups}" />
-
+    <label for="">Amount:</label>
+    <input type="text" id="id4" th:field="*{cups}" /><br>
 
 <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group me-2" id="toolbar" role="group" aria-label="First group">
@@ -54,7 +55,7 @@
 <!--    <option>Regular</option>-->
 <!--    <option>Strong</option>-->
 <!--</select><br>-->
-<h3>Pick your Method:</h3><br>
+<h3>Pick Your Method:</h3><br>
 <div class="container">
     <div class="row">
         <div class="column">
@@ -78,6 +79,7 @@
         <option>French Press</option>
         <option>Aeropress</option>
     </select><br><br>
+
 </div><br>
 <button type="submit" class="btn btn-secondary btn-lg" id="continue">Continue</button><br><br>
 </form>
