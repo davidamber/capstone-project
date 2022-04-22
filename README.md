@@ -15,6 +15,7 @@
 ## Daily Progress
 - April 22nd (70% done)
   - Worked on truncating coffee amount decimals
+  - Updated CSS for registration page
   - Completed practice presentation
   - Updated Capstone Rubric Google Doc
 - April 21st (80% done)
