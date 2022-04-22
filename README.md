@@ -1,5 +1,5 @@
 ## Coffee Calculator App
- This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods, as well as choose how many cups of coffee they want.
+ This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods as well as choose how many cups of coffee they want.
 
 ## Contents
 - [Case Study Rubric](https://docs.google.com/document/d/176gq1qsX1azl7ckhc3Cu7_LK6oqWOcU28cd-q3jbZQI/edit)
@@ -10,7 +10,7 @@
 - [Lessons Learned](#lessons-learned)
 - [Future Improvements](#future-improvements)
 - [Wire Frame](#wire-frame)
-- ![Schema Diagram](/resources/static/images/SchemaDiagram.png)
+- [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
 - April 22nd (67% done)
