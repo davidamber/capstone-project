@@ -117,7 +117,7 @@
     <div class="input-group"
          th:classappend="${#fields.hasErrors('password')}? 'has-error':''">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input id="password" type="password" th:field="*{password}" class="form-control" name="email" placeholder="Password">
+        <input id="password" type="password" th:field="*{password}" class="form-control" name="password" placeholder="Password">
         <p class="error-message"
            th:each="error : ${#fields.errors('password')}"
            th:text="${error}">Validation error</p>
@@ -125,7 +125,7 @@
     <div class="input-group"
          th:classappend="${#fields.hasErrors('confirmPassword')}? 'has-error':''">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input id="confirmPassword" type="password" th:field="*{confirmPassword}" class="form-control" name="email" placeholder="Confirm Password">
+        <input id="confirmPassword" type="password" th:field="*{confirmPassword}" class="form-control" name="confirmPassword" placeholder="Confirm Password">
         <p class="error-message"
            th:each="error : ${#fields.errors('confirmPassword')}"
            th:text="${error}">Validation error</p>

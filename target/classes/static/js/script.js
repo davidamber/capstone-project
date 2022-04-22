@@ -1,11 +1,12 @@
 const form1 = document.getElementById('form1');
-const username = document.getElementById('username');
+// const username = document.getElementById('username');
 const email = document.getElementById('email');
+const confirmEmail = document.getElementById('confirmEmail');
 const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
+const confirmPassword = document.getElementById('confirmPassword');
 
 form1.addEventListener('submit', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     validate();
 });
 
@@ -14,9 +15,8 @@ function validate() {
     // const emailValue = email.value.trim();
     // const passwordValue = password.value.trim();
     // const password2Value = password2.value.trim();
-    validateUsername(username.value);
-    validateEmail(email.value);
-    validatePasswords(password.value, password2.value);
+    validateEmail(email.value, confirmEmail.value);
+    validatePasswords(password.value, confirmPassword.value);
 }
 
 function validateUsername(usernameInput) {
@@ -30,7 +30,7 @@ function validateUsername(usernameInput) {
 }
 
 function validateEmail(emailInput) {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailInput)) {
+    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/.test(emailInput)) {
         alert('Email is not valid');
         email.style.border = "3px solid red";
         return false;
@@ -39,14 +39,14 @@ function validateEmail(emailInput) {
     }
 }
 
-function validatePasswords(passwordInput, password2Input) {
+function validatePasswords(passwordInput, confirmPasswordInput) {
     if (passwordInput === '') {
         alert("Password cannot be blank");
         password.style.border = "3px solid red";
         return false;
-    } else if (passwordInput !== password2Input) {
+    } else if (passwordInput !== confirmPasswordInput) {
         alert("Passwords must match");
-        password.style.border = "3px solid red";
+       confirmPassword.style.border = "3px solid red";
         return false;
     } else {
         return true;
