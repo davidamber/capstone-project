@@ -1,5 +1,8 @@
-# Davidson_Amber_Capstone
-## This is a coffee calculator app that will guide the user through the process of making coffee based on their desired method, coffee strength, etc.
+## Coffee Calculator App
+ This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods, as well as choose how many cups of coffee they want.
+
+## Contents
+-[DailyProgress](#daily-progress)
 
 ## Daily Progress
 - April 21st (80% done)
