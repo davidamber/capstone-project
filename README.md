@@ -13,7 +13,10 @@
 - [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
-- April 22nd (67% done)
+- April 22nd (70% done)
+  - Worked on truncating coffee amount decimals
+  - Completed practice presentation
+  - Updated Capstone Rubric Google Doc
 - April 21st (80% done)
   - Completed ThymeLeaf mapping for "save brew" function
   - Implemented CRUD operations for brew results (update, delete)

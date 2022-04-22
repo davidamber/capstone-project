@@ -12,6 +12,7 @@ h2 {
 }
 body {
     background-color: #eeddc7;
+    font-family: 'Roboto', sans-serif;
 }
 .dropdown {
     text-align: center;
@@ -33,6 +34,7 @@ input {
 }
 .btn {
     background-color: #9ab0a6;
+    font-size: 20px;
 }
 #submit {
     font-size: 24px;

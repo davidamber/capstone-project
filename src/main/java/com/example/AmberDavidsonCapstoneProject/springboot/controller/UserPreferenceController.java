@@ -29,7 +29,7 @@ public class UserPreferenceController {
         System.out.println(userPreference);
 
         double water = userPreference.getCups()*236.5;
-        double coffee = water/17.0;
+        double coffee = Math.round(water/17.0);
 
         BrewResults brewResults = new BrewResults();
         brewResults.setCoffee(coffee);
