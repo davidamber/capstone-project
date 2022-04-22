@@ -1,8 +1,8 @@
-## Coffee Calculator App
+## Amber Davidson - Coffee Calculator App
  This is a coffee calculator app that helps take the guesswork out of how much coffee and water you need in order to create a great cup of coffee. Users are able to choose between four different methods as well as choose how many cups of coffee they want.
 
 ## Contents
-- [Case Study Rubric](https://docs.google.com/document/d/176gq1qsX1azl7ckhc3Cu7_LK6oqWOcU28cd-q3jbZQI/edit)
+- [Case Study Rubric (contact Sang Shin to access this document)](https://docs.google.com/document/d/176gq1qsX1azl7ckhc3Cu7_LK6oqWOcU28cd-q3jbZQI/edit)
 - [Daily Progress](#daily-progress)
 - [User Stories](#user-stories)
 - [Technical Architecture](#technical-architecture)
@@ -15,6 +15,7 @@
 ## Daily Progress
 - April 22nd (70% done)
   - Worked on truncating coffee amount decimals
+  - Updated CSS for registration page
   - Completed practice presentation
   - Updated Capstone Rubric Google Doc
 - April 21st (80% done)
@@ -78,7 +79,7 @@ Other tasks:
 - A technical challenge I faced was 
 ## Lessons Learned
 - One of the important lessons I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my technical architecture.
-- I've also learned how important it is to rely on your teammates to help you succeed. I experienced a highly collaborative environment in this cohort, and I can honestly say that I wouldn't have been able to build this app without their help and collaboration.
+- I've also learned how important it is to rely on your teammates to help you succeed. I experienced a highly collaborative environment in this cohort, and I can honestly say that I wouldn't have been able to build this app without their help and support.
 ## Future Improvements
 - Some features I would like to include in the future are adding the ability to choose desired strength of coffee, the ability to choose different units of measure (tablespoons, ounces, etc.), as well as including grind size
 - Video tutorial on the results page would change depending on coffee method chosen
