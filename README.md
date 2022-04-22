@@ -10,7 +10,7 @@
 - [Lessons Learned](#lessons-learned)
 - [Future Improvements](#future-improvements)
 - [Wire Frame](#wire-frame)
-- ![Schema Diagram](/resources/static/images/SchemaDiagram.png)
+- [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
 - April 22nd (67% done)
