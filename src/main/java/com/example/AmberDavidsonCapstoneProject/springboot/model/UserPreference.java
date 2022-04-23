@@ -1,11 +1,6 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "preference")
@@ -24,6 +19,10 @@ public class UserPreference {
 
     // @transient
     private int cups;
+
+    @OneToOne
+    @JoinColumn(name = "method_id", referencedColumnName = "ratioId")
+    private Ratio ratio;
 
     public long getBrewMethodId() {
         return brewMethodId;

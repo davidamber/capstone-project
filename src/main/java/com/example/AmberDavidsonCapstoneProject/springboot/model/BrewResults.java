@@ -1,6 +1,7 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "brew_results")
@@ -27,6 +28,10 @@ public class BrewResults {
 
     @Column(name = "cups")
     private int cups;
+
+//    @ManyToOne
+//    @JoinColumn(name ="user_id", insertable=false, updatable=false)
+//    private UserList userList;
 
     public long getId() {
         return id;
