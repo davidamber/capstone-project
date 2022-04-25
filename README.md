@@ -74,7 +74,7 @@ Other tasks:
 - Create database
 
 ## Technical Architecture
-![Tech Architecture](/images/techarchitecture.png)
+![Tech Architecture](images/techarchitecture.png)
 ## Technical Challenges
 - A technical challenge I faced was 
 ## Lessons Learned
