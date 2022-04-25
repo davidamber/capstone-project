@@ -70,9 +70,6 @@
   - Task: Decide how unit of measure will be selected
   - Task: 
 
-Other tasks:
-- Create database
-
 ## Technical Architecture
 ![](images/techarchitecture.png)
 ## Technical Challenges
