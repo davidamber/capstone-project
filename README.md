@@ -9,7 +9,7 @@
 - [Technical Challenges](#technical-challenges)
 - [Lessons Learned](#lessons-learned)
 - [Future Improvements](#future-improvements)
-- [Wire Frame](#wire-frame)
+- [Wire Frames](#wire-frames)
 - [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
