@@ -64,11 +64,10 @@
   - Task: Decide how method will be selected
   - Task: Enable user to choose 1 method 
   - Task: Create connections to grind size and other classes
-
+  
 - As a user, I want to be able to choose unit of measure so that I can measure ingredients the way I want to.
   - Task: Define which units of measure can be chosen
   - Task: Decide how unit of measure will be selected
-  - Task: 
 
 ## Technical Architecture
 ![](images/techarchitecture.png)
