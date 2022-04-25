@@ -19,17 +19,21 @@ public class UserPreferenceController {
     @GetMapping("/form")
     public String form(Model model) {
         UserPreference userPreference = userPreferenceService.getUserPreferenceById(1);
+        model.addAttribute("brewingPreference", userPreferenceService.getAllUserPreferences());
         model.addAttribute("userId", userPreference.getBrewMethodId());
         model.addAttribute("userPreference",new UserPreference());
         return "form";
     }
 
     @PostMapping("/form/{id}")
-    public String test(@PathVariable long id, @ModelAttribute UserPreference userPreference, Model model) {
+    public String test(@PathVariable long id, @ModelAttribute("userPreference") UserPreference userPreference, Model model) {
         System.out.println(userPreference);
-
+        UserPreference preference = userPreferenceService.getUserPreferenceById(userPreference.getBrewMethodId());
+        Ratio ratio = userPreference.getRatio();
+        System.out.println("RATIO" + ratio.getRatioValue());
+        long ratioValue = preference.getRatio().getRatioValue();
         double water = userPreference.getCups()*236.5;
-        double coffee = Math.round(water/17.0);
+        double coffee = Math.round(water/ratioValue);
 
         BrewResults brewResults = new BrewResults();
         brewResults.setCoffee(coffee);

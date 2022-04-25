@@ -8,7 +8,6 @@ public class UserPreference {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "method_id)
     private long brewMethodId;
 
     @Column(name = "user_id")
@@ -20,16 +19,16 @@ public class UserPreference {
     // @transient
     private int cups;
 
-    @OneToOne
-    @JoinColumn(name = "method_id", referencedColumnName = "ratioId")
+    @OneToOne(targetEntity = Ratio.class)
+    @JoinColumn(name = "method_id", referencedColumnName = "method_id")
     private Ratio ratio;
 
     public long getBrewMethodId() {
         return brewMethodId;
     }
 
-    public void setBrewMethodId(long brewMethodId) {
-        this.brewMethodId = brewMethodId;
+    public void setBrewMethodId(long MethodId) {
+        this.brewMethodId = MethodId;
     }
 
     public long getUserId() {
@@ -56,10 +55,18 @@ public class UserPreference {
         this.cups = cups;
     }
 
+    public Ratio getRatio() {
+        return ratio;
+    }
+
+    public void setRatio(Ratio ratio) {
+        this.ratio = ratio;
+    }
+
     @Override
     public String toString() {
         return "UserPreference{" +
-                "brewMethodId=" + brewMethodId +
+                "MethodId=" + brewMethodId +
                 ", userId=" + userId +
                 ", brewMethodName='" + brewMethodName + '\'' +
                 ", cups=" + cups +

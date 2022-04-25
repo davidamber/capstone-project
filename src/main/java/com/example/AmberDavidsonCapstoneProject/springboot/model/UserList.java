@@ -29,11 +29,7 @@ public class UserList {
     @Column(name = "method_name")
     private String methodName;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
-    private Collection<UserPreference> userPreference;
-
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = BrewResults.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private Collection<BrewResults> brewResults;
 

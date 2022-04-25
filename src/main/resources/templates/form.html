@@ -25,12 +25,27 @@
 
 <!-- Need to implement security first-->
 <form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
+    <input type="hidden" id="id5" th:field="*{userId}" />
+    <label>Method:</label>
+    <div th:each="brew : ${brewingPreference}">
+        <p th:text="${brew.brewMethodName}" ></p>
+        <input type="hidden" th:name="brewMethodName" th:value="${brew.brewMethodName}">
+        <input type="radio" id="id3" th:name="brewMethodId" th:value="${brew.brewMethodId}" />
+        <input type="hidden" id="id2" th:name="ratio" th:value="${brew.ratio}">
+    </div>
+
+    <label>Amount:</label>
+    <input type="text" id="id4" th:field="*{cups}" /><br>-->
+
+
+<!--<form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
     <input type="hidden" id="id" th:field="*{brewMethodId}" />
-    <input type="hidden" id="id2" th:field="*{userId}" />
-    <label for="">Method:</label>
+    <input type="hidden" id="id2" th:field="*{ratio}" />
+    <input type="hidden" id="id5" th:field="*{userId}" />
+    <label>Method:</label>
     <input type="text" id="id3" th:field="*{brewMethodName}" />
-    <label for="">Amount:</label>
-    <input type="text" id="id4" th:field="*{cups}" /><br>
+    <label>Amount:</label>
+    <input type="text" id="id4" th:field="*{cups}" /><br>-->
 
 <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group me-2" id="toolbar" role="group" aria-label="First group">
