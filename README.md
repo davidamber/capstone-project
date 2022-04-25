@@ -75,11 +75,16 @@
 ## Technical Challenges
 - A technical challenge I faced was 
 ## Lessons Learned
-- One of the important lessons I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my technical architecture.
+- More than just learning how to code, I've learned to become more resilient. As someone who didn't have a background in coding, this program was quite intense and there were times that I wasn't sure if I would be able to learn all that I needed to. However, I persevered, stuck it out, and learned how to be transparent about areas that I needed help with.
+- Another important lesson I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my tech stack.
 - I've also learned how important it is to rely on your teammates to help you succeed. I experienced a highly collaborative environment in this cohort, and I can honestly say that I wouldn't have been able to build this app without their help and support.
 ## Future Improvements
-- Some features I would like to include in the future are adding the ability to choose desired strength of coffee, the ability to choose different units of measure (tablespoons, ounces, etc.), as well as including grind size
-- Video tutorial on the results page would change depending on coffee method chosen
+- Some features I would like to include in the future: 
+   - Ability to choose desired strength of coffee
+   - Different units of measure (tablespoons, ounces, etc.)
+   - Include grind size
+   - Video tutorial on the results page would change depending on coffee method chosen
+   - More detailed instructions on how to make coffee with specified method
 ## Wire Frames
 
 ## Schema Diagram
