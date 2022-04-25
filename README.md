@@ -70,7 +70,7 @@
   - Task: Decide how unit of measure will be selected
 
 ## Technical Architecture
-![](images/techarchitecture.png)
+![Technical Architecture]()
 ## Technical Challenges
 - A technical challenge I faced was 
 ## Lessons Learned
@@ -85,5 +85,6 @@
    - Video tutorial on the results page would change depending on coffee method chosen
    - More detailed instructions on how to make coffee with specified method
 ## Wire Frames
-
+![Wire Frames](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/WireFrames.png)
 ## Schema Diagram
+![Schema Diagram](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/SchemaDiagram.png)
