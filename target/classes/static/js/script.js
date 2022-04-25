@@ -34,6 +34,10 @@ function validateEmail(emailInput) {
         alert('Email is not valid');
         email.style.border = "3px solid red";
         return false;
+    } else if (emailInput !== confirmEmailInput) {
+        alert("Emails must match");
+        confirmEmail.style.border = "3px solid red";
+        return false;
     } else {
         return true;
     }
@@ -51,6 +55,8 @@ function validatePasswords(passwordInput, confirmPasswordInput) {
     } else {
         return true;
     }
+
+
 }
 
 

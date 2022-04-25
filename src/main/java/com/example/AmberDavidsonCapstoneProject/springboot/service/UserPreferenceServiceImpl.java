@@ -15,11 +15,7 @@ public class UserPreferenceServiceImpl implements UserPreferenceService {
 
     @Override
     public List<UserPreference> getAllUserPreferences() {
-        return null;
-    }
-    @Override
-    public List<UserPreference> getAllUserPreference() {
-        return null;
+        return userPreferenceRepository.findAll();
     }
 
     @Override

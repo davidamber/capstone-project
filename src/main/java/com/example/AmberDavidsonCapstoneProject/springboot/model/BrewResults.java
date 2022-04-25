@@ -1,6 +1,7 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "brew_results")
@@ -27,6 +28,14 @@ public class BrewResults {
 
     @Column(name = "cups")
     private int cups;
+
+    @ManyToOne(targetEntity=UserPreference.class)
+    @JoinColumn(name="preference_id", referencedColumnName="brewMethodId")
+    private UserPreference methodAndRatioPreference;
+
+//    @ManyToOne
+//    @JoinColumn(name ="user_id", insertable=false, updatable=false)
+//    private UserList userList;
 
     public long getId() {
         return id;

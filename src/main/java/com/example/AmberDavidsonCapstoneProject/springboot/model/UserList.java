@@ -1,11 +1,9 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.example.AmberDavidsonCapstoneProject.springboot.security.Role;
+
+import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "user_list")
@@ -30,6 +28,10 @@ public class UserList {
 
     @Column(name = "method_name")
     private String methodName;
+
+    @OneToMany(targetEntity = BrewResults.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private Collection<BrewResults> brewResults;
 
     public void setId(long id) {
         this.userId = userId;
