@@ -13,6 +13,11 @@
 - [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
+- April 25th (90% done)
+  - Updated Thymeleaf for displaying cups
+  - Updated Java code for coffee/water calculation
+  - Started testing
+  - Inserted images into README
 - April 22nd (70% done)
   - Worked on truncating coffee amount decimals
   - Updated CSS for registration page
@@ -64,16 +69,16 @@
   - Task: Decide how method will be selected
   - Task: Enable user to choose 1 method 
   - Task: Create connections to grind size and other classes
-
+  
 - As a user, I want to be able to choose unit of measure so that I can measure ingredients the way I want to.
   - Task: Define which units of measure can be chosen
   - Task: Decide how unit of measure will be selected
-  - Task: 
 
 ## Technical Architecture
-![](images/techarchitecture.png)
+![Technical Architecture](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/techarchitecture.png)
 ## Technical Challenges
-- A technical challenge I faced was 
+- A technical challenge I faced was using ThymeLeaf, particularly when it came to displaying results within a table in the final step of the process. An example of this was needing to use a different notation in order to pull information from a variable that was in a different entity model than the others. I also needed to use hidden inputs in order to correctly pull information.
+- I also struggled often with centering images and other objects using CSS, as well as properly displaying images in general. I googled and used others' code snippets when I was unsure and used a process of trial and error until I found something that worked. Another workaround that I needed to implement for my login background was using the direct URL for the image rather than the one I had stored locally.
 ## Lessons Learned
 - More than just learning how to code, I've learned to become more resilient. As someone who didn't have a background in coding, this program was quite intense and there were times that I wasn't sure if I would be able to learn all that I needed to. However, I persevered, stuck it out, and learned how to be transparent about areas that I needed help with.
 - Another important lesson I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my tech stack.
@@ -85,6 +90,8 @@
    - Include grind size
    - Video tutorial on the results page would change depending on coffee method chosen
    - More detailed instructions on how to make coffee with specified method
+   - Admin role functionality for user list
 ## Wire Frames
-
+![Wire Frames](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/WireFrames.png)
 ## Schema Diagram
+![Schema Diagram](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/SchemaDiagram.png)
