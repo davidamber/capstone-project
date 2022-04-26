@@ -1,5 +1,8 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.controller;
 
+import com.example.AmberDavidsonCapstoneProject.springboot.service.BrewResultsServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.BrewResults;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.UserList;
 import com.example.AmberDavidsonCapstoneProject.springboot.service.BrewResultsService;
@@ -39,6 +42,10 @@ public class BrewResultsController {
         System.out.println(brewResults.getWater());
         System.out.println(brewResults.getCoffee());
         brewResultsService.saveBrewResults(brewResults);
+
+        Logger logger = LoggerFactory.getLogger(BrewResultsServiceImpl.class);
+        logger.info("BrewResultsServiceImpl: Brew with id " + brewResults.getId() + " has been saved to user id " + brewResults.getUserId());
+
         model.addAttribute("brewResults", brewResults);
         model.addAttribute("listBrewResults", brewResultsService.getAllBrewResults());
         return "brew_list";

@@ -1,5 +1,7 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.BrewResults;
 import com.example.AmberDavidsonCapstoneProject.springboot.model.UserList;
 import com.example.AmberDavidsonCapstoneProject.springboot.repository.BrewResultsRepository;
@@ -23,6 +25,9 @@ public class BrewResultsServiceImpl implements BrewResultsService {
     @Override
     public void saveBrewResults(BrewResults brewResults) {
         brewResultsRepository.save(brewResults);
+
+        Logger logger = LoggerFactory.getLogger(BrewResultsServiceImpl.class);
+        logger.info("BrewResultsServiceImpl: Brew with id " + brewResults.getId() + " has been saved to user id " + brewResults.getUserId());
     }
     @Override
     public BrewResults getBrewResultsById(long id) {

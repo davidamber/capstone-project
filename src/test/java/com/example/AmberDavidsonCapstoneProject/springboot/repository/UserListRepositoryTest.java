@@ -1,5 +1,6 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.repository;
 
+import com.example.AmberDavidsonCapstoneProject.springboot.model.UserList;
 import com.example.AmberDavidsonCapstoneProject.springboot.security.User;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,10 +16,10 @@ class UserListRepositoryTest {
     private UserListRepository userListRepository;
 
     @Test
-    void findFirstByLastName_should_return_Employee_given_valid_lastname() {
+    void findFirstByLastName_should_return_User_given_valid_lastname() {
 
-        User Davidson = userListRepository.findFirstByLastName("Davidson");
-        Assertions.assertThat(Davidson.getLastName()).isEqualTo("Davidson");
+        User davidson = userListRepository.findFirstByLastName("Davidson");
+        Assertions.assertThat(davidson.getLastName()).isEqualTo("Davidson");
     }
 }
 

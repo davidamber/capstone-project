@@ -6,6 +6,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ class BrewResultsServiceImplTest {
     private BrewResultsServiceImpl brewResultsServiceImpl;
 
     @Test
+    @Transactional
     void getAllBrewResults() {
         List<BrewResults> allBrewResults = brewResultsServiceImpl.getAllBrewResults();
         int beforeAddingMoreBrewResults = allBrewResults.size();
@@ -30,27 +32,22 @@ class BrewResultsServiceImplTest {
         int afterAddingMoreBrewResults = brewResultsServiceImpl.getAllBrewResults().size();
 
         Assertions.assertThat(afterAddingMoreBrewResults).isEqualTo(beforeAddingMoreBrewResults + 1);
-        Assertions.assertThat(allBrewResults.contains(brew1));
+        Assertions.assertThat(allBrewResults.contains(brew1)).isTrue();
     }
 
     @Test
+    @Transactional
     void deleteBrewResultsById() {
         List<BrewResults> allBrewResults = brewResultsServiceImpl.getAllBrewResults();
         int beforeDeletingMoreBrewResults = allBrewResults.size();
 
-        BrewResults brew1 = allBrewResults.get(0);
-        brewResultsServiceImpl.deleteBrewResultsById(brew1.getId());
+        BrewResults brew2 = allBrewResults.get(0);
+        brewResultsServiceImpl.deleteBrewResultsById(brew2.getId());
         int afterDeletingMoreBrewResults = brewResultsServiceImpl.getAllBrewResults().size();
 
         Assertions.assertThat(afterDeletingMoreBrewResults).isEqualTo(beforeDeletingMoreBrewResults - 1);
-        Assertions.assertThat(allBrewResults.contains(brew1));
+        Assertions.assertThat(allBrewResults.contains(brew2));
     }
 }
 
-//    @Test
-//    void findFirstByLastName_should_return_Employee_given_valid_lastname() {
-//
-//        Employee jones = employeeRepository.findFirstByLastName("Jones");
-//        Assertions.assertThat(jones.getLastName()).isEqualTo("Jones");
-//    }
 

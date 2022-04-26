@@ -1,5 +1,7 @@
 package com.example.AmberDavidsonCapstoneProject.springboot.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+
 import javax.persistence.*;
 import java.util.Collection;
 
