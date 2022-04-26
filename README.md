@@ -84,6 +84,7 @@
    - Include grind size
    - Video tutorial on the results page would change depending on coffee method chosen
    - More detailed instructions on how to make coffee with specified method
+   - Admin role functionality for user list
 ## Wire Frames
 ![Wire Frames](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/WireFrames.png)
 ## Schema Diagram
