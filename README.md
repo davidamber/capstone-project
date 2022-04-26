@@ -13,6 +13,11 @@
 - [Schema Diagram](#schema-diagram)
 
 ## Daily Progress
+- April 25th (90% done)
+  - Updated Thymeleaf for displaying cups
+  - Updated Java code for coffee/water calculation
+  - Started testing
+  - Inserted images into README
 - April 22nd (70% done)
   - Worked on truncating coffee amount decimals
   - Updated CSS for registration page
