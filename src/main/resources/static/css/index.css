@@ -1,0 +1,30 @@
+body {
+    background-color: #eeddc7;
+}
+.container {
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#start {
+    text-align: center;
+    background-color: #a4d0bd;
+    color: black;
+    font-size: 25px;
+    width: 150px;
+}
+
+#logout {
+    text-align: center;
+    background-color: #9ab0a6;
+    color: black;
+}
+img {
+    width: 250px;
+    height: 250px;
+}

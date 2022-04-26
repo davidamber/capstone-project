@@ -1,0 +1,15 @@
+body {
+    background-color: #eeddc7;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+}
+.btn {
+    background-color: #9ab0a6;
+}
+.form-select {
+    width: 33%;
+    height: 35px;
+    color: gray;
+}
