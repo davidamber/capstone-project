@@ -24,52 +24,45 @@
 <img src="images/noun-takeaway-coffee-cup-1219977.png" alt="travel coffee cup" id="img1"><br>
 
 <!-- Need to implement security first-->
+<!--<form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">-->
+<!--    <input type="hidden" id="id5" th:field="*{userId}" />-->
+<!--    <label>Method:</label>-->
+<!--    <div th:each="brew : ${brewingPreference}">-->
+<!--        <p th:text="${brew.brewMethodName}" ></p>-->
+<!--        <input type="hidden" th:name="brewMethodName" th:value="${brew.brewMethodName}">-->
+<!--        <input type="radio" id="id3" th:name="brewMethodId" th:value="${brew.brewMethodId}" />-->
+<!--        <input type="hidden" id="id2" th:name="ratio" th:value="${brew.ratio}">-->
+<!--    </div>-->
+
+<!--    <label>Amount:</label>-->
+<!--    <input type="text" id="id4" th:field="*{cups}" /><br>&ndash;&gt;-->
+
+
 <form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
-    <input type="hidden" id="id5" th:field="*{userId}" />
-    <label>Method:</label>
-    <div th:each="brew : ${brewingPreference}">
-        <p th:text="${brew.brewMethodName}" ></p>
-        <input type="hidden" th:name="brewMethodName" th:value="${brew.brewMethodName}">
-        <input type="radio" id="id3" th:name="brewMethodId" th:value="${brew.brewMethodId}" />
-        <input type="hidden" id="id2" th:name="ratio" th:value="${brew.ratio}">
-    </div>
-
-    <label>Amount:</label>
-    <input type="text" id="id4" th:field="*{cups}" /><br>-->
-
-
-<!--<form th:action="@{/form/{id}(id=${userId})}" th:object="${userPreference}" method="POST">
     <input type="hidden" id="id" th:field="*{brewMethodId}" />
     <input type="hidden" id="id2" th:field="*{ratio}" />
     <input type="hidden" id="id5" th:field="*{userId}" />
-    <label>Method:</label>
-    <input type="text" id="id3" th:field="*{brewMethodName}" />
-    <label>Amount:</label>
-    <input type="text" id="id4" th:field="*{cups}" /><br>-->
 
-<div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group me-2" id="toolbar" role="group" aria-label="First group">
-        <button type="button" class="btn btn-dark">1</button>
-        <button type="button" class="btn btn-dark">2</button>
-        <button type="button" class="btn btn-dark">3</button>
-        <button type="button" class="btn btn-dark">4</button>
-        <button type="button" class="btn btn-dark">5</button>
-        <button type="button" class="btn btn-dark">6</button>
-        <button type="button" class="btn btn-dark">7</button>
-        <button type="button" class="btn btn-dark">8</button>
-        <button type="button" class="btn btn-dark">9</button>
-        <button type="button" class="btn btn-dark">10</button>
-        <button type="button" class="btn btn-dark">11</button>
-        <button type="button" class="btn btn-dark">12</button>
+    <input class="form-control" placeholder="Default Input" id="id4" th:field="*{cups}" /><br>
+
+<!--<div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">-->
+<!--    <div class="btn-group me-2" id="toolbar" role="group" aria-label="First group">-->
+<!--        <button type="button" class="btn btn-dark">1</button>-->
+<!--        <button type="button" class="btn btn-dark">2</button>-->
+<!--        <button type="button" class="btn btn-dark">3</button>-->
+<!--        <button type="button" class="btn btn-dark">4</button>-->
+<!--        <button type="button" class="btn btn-dark">5</button>-->
+<!--        <button type="button" class="btn btn-dark">6</button>-->
+<!--        <button type="button" class="btn btn-dark">7</button>-->
+<!--        <button type="button" class="btn btn-dark">8</button>-->
+<!--        <button type="button" class="btn btn-dark">9</button>-->
+<!--        <button type="button" class="btn btn-dark">10</button>-->
+<!--        <button type="button" class="btn btn-dark">11</button>-->
+<!--        <button type="button" class="btn btn-dark">12</button>-->
+        </select>
     </div>
-</div><br><br>
+</div><br>
 
-<!--<h3>Pick your strength:</h3><br>-->
-<!--<img src="images/noun-coffee-beans-2949100.png" alt="coffee beans" id="img2">-->
-<!--<select class="form-select" id="form-select1" aria-label="Default select">-->
-<!--    <option>Regular</option>-->
-<!--    <option>Strong</option>-->
-<!--</select><br>-->
 <h3>Pick Your Method:</h3><br>
 <div class="container">
     <div class="row">
@@ -88,11 +81,11 @@
     </div>
 </div><br>
 <div>
-    <select class="form-select" id="form-select" aria-label="Default select">
-        <option>Coffee Machine</option>
-        <option>Pour-over</option>
-        <option>French Press</option>
-        <option>Aeropress</option>
+    <select th:field="*{brewMethodName}" class="form-select" aria-label="Default select">
+        <option value="Coffee Machine">Coffee Machine</option>
+        <option value="Pourover">Pourover</option>
+        <option value="French Press">French Press</option>
+        <option value="Aeropress">Aeropress</option>
     </select><br><br>
 
 </div><br>

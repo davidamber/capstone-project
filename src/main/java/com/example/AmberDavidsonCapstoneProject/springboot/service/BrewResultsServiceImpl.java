@@ -41,4 +41,5 @@ public class BrewResultsServiceImpl implements BrewResultsService {
         BrewResults brewResults = getBrewResultsById(id);
         brewResultsRepository.delete(brewResults);
     }
+
 }

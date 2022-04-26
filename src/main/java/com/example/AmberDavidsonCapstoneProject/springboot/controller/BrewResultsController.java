@@ -34,6 +34,7 @@ public class BrewResultsController {
     // save user's brew
     @PostMapping("/saveBrewResults")
     public String saveBrewResults(@ModelAttribute BrewResults brewResults, Model model) {
+        System.out.println(brewResults.toString());
         System.out.println(brewResults.getMethodName());
         System.out.println(brewResults.getWater());
         System.out.println(brewResults.getCoffee());

@@ -26,6 +26,20 @@ public class BrewResults {
     @Column(name = "method_name")
     private String methodName;
 
+    @Override
+    public String toString() {
+        return "BrewResults{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", ratioValue=" + ratioValue +
+                ", coffee=" + coffee +
+                ", water=" + water +
+                ", methodName='" + methodName + '\'' +
+                ", cups=" + cups +
+                ", methodAndRatioPreference=" + methodAndRatioPreference +
+                '}';
+    }
+
     @Column(name = "cups")
     private int cups;
 

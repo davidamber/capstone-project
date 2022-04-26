@@ -56,10 +56,10 @@ public class UserListController {
     @GetMapping("/showFormForUpdate/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
 
-        // get employee from the service
+        // get user from the service
         UserList userList = userListService.getUserListById(id);
 
-        // set employee as a model attribute to pre-populate the form
+        // set user as a model attribute to pre-populate the form
         model.addAttribute("userList", userList);
         return "update_user";
     }

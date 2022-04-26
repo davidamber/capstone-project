@@ -19,7 +19,7 @@ public class UserPreference {
     // @transient
     private int cups;
 
-    @OneToOne(targetEntity = Ratio.class)
+    @ManyToOne(targetEntity = Ratio.class)
     @JoinColumn(name = "method_id", referencedColumnName = "method_id")
     private Ratio ratio;
 

@@ -51,20 +51,20 @@
             </tr>
             <tr>
                 <td th:text="*{methodName}"></td>
-                <td th:text="*{cups}"></td>
+                <td th:text="${cups}"></td>
                 <td th:text="*{coffee}"></td>
                 <td th:text="*{water}"></td>
             </tr>
         </table><br>
         <input type="hidden" th:field="*{methodName}"></input>
-        <input type="hidden" th:field="*{cups}"></input>
+        <input type="hidden" th:field="${cups}"></input>
         <input type="hidden" th:field="*{coffee}"></input>
         <input type="hidden" th:field="*{water}"></input>
 
         <button type="submit" class="btn btn-dark btn-md">Save Brew</button>
     </form><br>
     <a th:href="@{/form}" id="newBrew">Create a New Brew</a><br>
-    <a th:href="@{/brewList}" id="brewlist">Back to Brew List</a>
+    <a th:href="@{/brewList}" id="brewlist">Back to Brew History</a>
 </div><br><br><br>
 <div style="text-align: center">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/A2oipi1dEIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
