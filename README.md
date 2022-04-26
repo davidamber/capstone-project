@@ -92,6 +92,6 @@
    - More detailed instructions on how to make coffee with specified method
    - Admin role functionality for user list
 ## Wire Frames
-![Wire Frames](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/WireFrames.png)
+![Wire Frames](https://github.com/davidamber/capstone-project/blob/main/Davidson_Amber_Wireframe.png)
 ## Schema Diagram
-![Schema Diagram](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/SchemaDiagram.png)
+![Schema Diagram](https://github.com/davidamber/capstone-project/blob/main/Davidson_Amber_Schema.png)
