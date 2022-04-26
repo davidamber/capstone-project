@@ -70,9 +70,10 @@
   - Task: Decide how unit of measure will be selected
 
 ## Technical Architecture
-![Technical Architecture]()
+![Technical Architecture](https://github.com/davidamber/capstone-project/blob/main/src/main/resources/static/images/techarchitecture.png)
 ## Technical Challenges
-- A technical challenge I faced was 
+- A technical challenge I faced was using ThymeLeaf, particularly when it came to displaying results within a table in the final step of the process. An example of this was needing to use a different notation in order to pull information from a variable that was in a different entity model than the others. I also needed to use hidden inputs in order to correctly pull information.
+- I also struggled often with centering images and other objects using CSS, as well as properly displaying images in general. I googled and used others' code snippets when I was unsure and used a process of trial and error until I found something that worked. Another workaround that I needed to implement for my login background was using the direct URL for the image rather than the one I had stored locally.
 ## Lessons Learned
 - More than just learning how to code, I've learned to become more resilient. As someone who didn't have a background in coding, this program was quite intense and there were times that I wasn't sure if I would be able to learn all that I needed to. However, I persevered, stuck it out, and learned how to be transparent about areas that I needed help with.
 - Another important lesson I've learned along the way is that coding is a non-linear, highly iterative process. I had thought that I could start from the database and then move on to the backend and frontend once I was finished, but I've needed to remain flexible and go back and forth between the different components of my tech stack.
