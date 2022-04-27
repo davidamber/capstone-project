@@ -22,17 +22,3 @@ class UserListRepositoryTest {
         Assertions.assertThat(davidson.getLastName()).isEqualTo("Davidson");
     }
 }
-
-//@SpringBootTest
-//class EmployeeRepositoryTest {
-//
-//    @Autowired
-//    private EmployeeRepository employeeRepository;
-//
-//    @Test
-//    void findFirstByLastName_should_return_Employee_given_valid_lastname() {
-//
-//        Employee jones = employeeRepository.findFirstByLastName("Jones");
-//        Assertions.assertThat(jones.getLastName()).isEqualTo("Jones");
-//    }
-//}
